@@ -1,0 +1,17 @@
+{
+  "kind": "evm_project",
+  "token": {
+    "contract": "LaunchToken",
+    "name": "EmberEVO",
+    "symbol": "EMBEO",
+    "decimals": 18
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "NEW EmberEVO (EMBEO) issuance, Ethereum mainnet chainId 1, pairWith eth. No application contracts. Official ProjectFactory supplies its pool, MerkleDistributor and initialization-only PoolInitializationGuard; no custom swap hook. The argument-free LaunchToken constructor mints exactly 1000000000000000000000000000 units to the factory. Plain ERC-20, no extensions or privileges. Required quoted economics: poolBps 8600 and remainderTo 0x1c651928150daddda9c2c040a9d4901d862f8ec4; intended issuer AND actual payer is that same wallet. Swarm 1000 bps, remainder 400 bps. These notes do not configure policy, payment identity or allocation. The structured launch request supplies chainId, pairWith, owner and economics. The standard ETH opening-cap policy is expected to resolve to 10 ETH; use the pinned policy, never a custom_token initialMarketCapWei field. The cap is an opening valuation, not an owner deposit or reserves. The factory seeds launch tokens only. Admission fee 3000 is not the deployed fee: read the factory's effective LaunchFees and report the actual deployed poolKey; expected trading fee is 12500 (1.25%), split 1% to the actual paying wallet and 0.25% to IMD, separate from token transfers. Owner roles do not confer LP custody. See docs/LAUNCH.md for evidence and unresolved deployment responsibilities. Historical test issuance EmberEvo (EMVO), Ethereum MAINNET 0x7a427b94547232356cf212fd1c668e8eb4069a46: DO NOT BUY; it does not qualify for formal EMBEO membership. Its contract and pool still exist and the notice cannot stop trading. Leave old balances and separate Swarm claims untouched; no exchange, migration or compensation promise. Publish the notice beside the new EMBEO address once deployment evidence exists. Independent community project, not an official IMD token or endorsement. No website, Genesis NFT, access backend or other roadmap contract is part of this launch. Logo and public links are in README; no unsupported metadata fields. Quote review and payment remain the owner's responsibility; launch.open starts build, tests, review and deployment without a promised later approval pause. Local checks are not a safety certification."
+}
