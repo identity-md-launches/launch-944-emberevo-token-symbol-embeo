@@ -173,8 +173,8 @@ contract LaunchTokenTest is Test {
         vm.expectRevert(abi.encodeWithSelector(IERC20Errors.ERC20InvalidSender.selector, address(0)));
         vm.prank(address(0));
         token.transfer(ALICE, 0);
-        // Zero-value transferFrom still rejects a zero source (while spending its zero allowance).
-        vm.expectRevert();
+        // The allowance update rejects the zero approver before transferFrom reaches _transfer.
+        vm.expectRevert(abi.encodeWithSelector(IERC20Errors.ERC20InvalidApprover.selector, address(0)));
         token.transferFrom(address(0), ALICE, 0);
     }
 
