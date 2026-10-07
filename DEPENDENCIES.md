@@ -7,7 +7,17 @@ All required dependency source is delivered as ordinary files; no Git submodule,
 | OpenZeppelin Contracts | [v5.0.2](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/v5.0.2) | Five Solidity files (ERC20 import closure), plus MIT license |
 | forge-std | [v1.9.7](https://github.com/foundry-rs/forge-std/tree/v1.9.7) | `src/`, MIT and Apache licenses; test-only dependency |
 
-Sources were fetched from the upstream tagged codeload archives, selected as regular files, and not modified. Archive SHA-256 values:
+Sources were fetched from the upstream tagged codeload archives and selected as regular files. The five OpenZeppelin source files are unchanged. Seven test-only forge-std files were reformatted by `forge fmt` to the project's 120-column setting; comparison against the pinned archive confirms only whitespace differs:
+
+- `src/StdAssertions.sol`
+- `src/StdJson.sol`
+- `src/StdToml.sol`
+- `src/Vm.sol`
+- `src/console.sol`
+- `src/interfaces/IERC7540.sol`
+- `src/interfaces/IMulticall3.sol`
+
+These paths are relative to `lib/forge-std/`; all other vendored forge-std source files match the archive byte-for-byte. Archive SHA-256 values:
 
 ```text
 18c7b7e949b9a82dcd8cd394426c9c2636dfc263aa2317d4749dbfa0c7b3925a  openzeppelin-contracts-v5.0.2.tar.gz

@@ -8,9 +8,9 @@ This package implements a new **EmberEVO (EMBEO)** issuance through the official
 | --- | --- |
 | Source, tests, ABI, creation/runtime bytecode, compiler input | Delivered; reproducible local build |
 | Manifest | `launch.json`, official admission shape; formal manifest admission/review still belongs to the protocol |
-| Public Check | No blockers for `launch/request.json`; response preserved |
-| Chain policy discovery | Mainnet evm_project policy version 18; snapshot preserved, not yet bound by a new quote |
-| Current factory fee read | 12500 / 1,000,000 = 1.25% at mainnet block 26,142,850 |
+| Public Check | Earlier response not included; no blocker-free Check is attested by this package |
+| Chain policy discovery | Mainnet evm_project policy version 18; fresh snapshot in `artifacts/discovery/chain-policy.json`, not yet bound by a new quote |
+| Current factory fee read | 12500 / 1,000,000 = 1.25% at mainnet block 26,143,028; fresh capture in `artifacts/discovery/factory-reads.json` |
 | Signed quote, prepared/challenge inputs, inputHash, quote expiry | Not obtained or signed in this contributor task |
 | Formal EMBEO token/distributor/guard addresses and transaction | Pending official deployment |
 | Formal EMBEO poolKey, initialized price, position and allocations | Pending official deployment |
@@ -18,7 +18,7 @@ This package implements a new **EmberEVO (EMBEO)** issuance through the official
 
 `artifacts/deployment-status.json` uses null for unknown deployment values. Do not use the old EMVO address, local test addresses, zero address, factory address or predicted address as the new deployed token address. Zero address is meaningful only as the native ETH currency. Both README and TOKEN.md must keep the historical-test notice beside the eventual new EMBEO address.
 
-The bounded contributor task has performed no payments, signed approvals, broadcast transactions, swaps, schedules, paid child jobs or transfers of old assets. Its Check is free preflight, not a new paid launch. The proposed network build/review steps in the request have not been started by this task. Do not pay for a duplicate launch if an existing parent launch is already processing this work.
+The bounded contributor task has performed no payments, signed approvals, broadcast transactions, swaps, schedules, paid child jobs or transfers of old assets. Check is free preflight, not a new paid launch; the earlier response was absent from the supplied revision tree. The proposed network build/review steps in the request have not been started by this task. Do not pay for a duplicate launch if an existing parent launch is already processing this work.
 
 ## Request versus manifest
 
@@ -26,9 +26,7 @@ The bounded contributor task has performed no payments, signed approvals, broadc
 
 The local admission manifest uses the supplied protocol format: `kind`, `token`, empty `contracts`, `pool` and explanatory `notes`. Its token is `LaunchToken`, EmberEVO, EMBEO, 18 decimals. Pool fields are zero-address `pairedCurrency`, `fee: 3000`, `tickSpacing: 60`, `initialPrice: "79228162514264337593543950336"`. Chain and economics are resolved by the quoted input and pinned policy, not activated by prose notes. The format was cross-checked against an [official accepted evm_project manifest](https://raw.githubusercontent.com/identity-md-launches/launch-904-emberevo-token-symbol-emvo/d96f1f04a9ad0b05d9a319f02e93fa28f0d5c16f/launch.json); no old identity or pairing was reused.
 
-The public Check initially rejected an implicit/template workflow with `bad_path_count` for implementation/test steps. The saved request fixes this by explicitly using `build-contract-project` followed by `adversarial-review`, within the same evm_project route and unchanged token/economics. The final Check resolves the protocol's build, separate tests, manifest, audit panel/judge and mainnet deployment plan. No implementation or application contract was added to bypass this error.
-
-The Check still contains generic, non-required contract-fact assumptions such as an owner changing settings and builder-selected numbers. **Those assumptions are not accepted changes:** this token has no owner or configurable numbers. A future prepared input must retain the explicit fixed supply, no privileges and token-only scope. Public Check's broad `kind: "contracts"` is its UI category; the request's onchain route remains `evm_project`.
+The saved request explicitly uses `build-contract-project` followed by `adversarial-review`, within the evm_project route and unchanged token/economics. No Check response is included, so its acceptance, resolved plan and assumptions must be reviewed in the official Check/quote flow. A future prepared input must retain the explicit fixed supply, no privileges and token-only scope; generic assumptions about owner settings or builder-selected numbers would not be accepted changes.
 
 ## Observed policy and cost
 
@@ -43,15 +41,15 @@ The [public capabilities API](https://api.imd.fun/requests/capabilities) adverti
 | Recipient | `0x4e0fa57bde726079356537e2f34d671e9f41adbc` |
 | Advertised quote lifetime | 600 seconds; an actual quote's expiry remains authoritative |
 
-This is a service charge, separate from the pool's ETH pairing and trading fees. `launch-1` is the action version, not evidence that the quote binds chain policy 18. No prepared quote, challenge, inputHash or actual expiry is fabricated here.
+The fresh response is saved in `artifacts/discovery/capabilities.json`; URLs, capture times and hashes are recorded in `artifacts/discovery/index.json`. This is a service charge, separate from the pool's ETH pairing and trading fees. `launch-1` is the action version, not evidence that the quote binds chain policy 18. No prepared quote, challenge, inputHash or actual expiry is fabricated here.
 
-The [policy listing](https://api.imd.fun/launch/policies) shows evm_project policy **18** for chainId 1. Its native-currency opening cap is `10000000000000000000` wei, **10 ETH**. The saved Check confirms that cap, 86% pool allocation, fixed standard token and 1.25% trading fee. The policy's base liquidity default is 80%; the request overrides it to 86%, as Check confirms. A new signed quote must pin the actual resolved policy and override. The legacy 1:1 manifest sqrtPrice is not the price to show users; the deployer derives the effective opening price from the pinned cap and currency ordering.
+The [policy listing](https://api.imd.fun/launch/policies), freshly saved as `artifacts/discovery/policies.json`, shows evm_project policy **18** for chainId 1. Its native-currency opening cap is `10000000000000000000` wei, **10 ETH**. The policy's base liquidity default is 80%; the request asks to override it to 86%. Without the earlier Check response, acceptance of that override is not evidenced here. A new signed quote must pin the actual resolved policy and override. The legacy 1:1 manifest sqrtPrice is not the price to show users; the deployer derives the effective opening price from the pinned cap and currency ordering.
 
 The cap is an opening valuation, not a required 10 ETH owner deposit, reserves or redemption backing. The initial pool is seeded with EMBEO alone. No investor receives a promise of ETH backing or swap availability. The policy has protocol/distributor timing fields; they are not issuer vesting requirements. Use the deployed distributor's actual unlock data, root and proofs.
 
 ## Factory fee read and LP custody
 
-At Ethereum mainnet block **26,142,850**, hash `0x60285c1d7ec38a02a340cbf9733d7c325da0d789e42f5d763ab544809c18def4`, read-only RPC calls returned:
+At Ethereum mainnet block **26,143,028**, hash `0xb39ef46160948734f09184f63ee191750344ff58cf01165b591d14eab0c53dfc`, fresh read-only RPC calls during this revision returned:
 
 | Read | Result |
 | --- | --- |
@@ -65,11 +63,11 @@ At Ethereum mainnet block **26,142,850**, hash `0x60285c1d7ec38a02a340cbf9733d7c
 | Factory `poolHook()` | `0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000` |
 | Factory `deployer()` | `0xcecc29b037f5064fcdf45a5c318f132ef76aa551` |
 
-The factory was discovered from the historical EMVO transaction's destination and checked for runtime code. The fee contract was read from that factory, not copied from a reference address table. The block, code hashes and calls are saved in `artifacts/discovery/factory-reads.json`. These are candidate protocol addresses until the formal EMBEO quote/deployment binds the same factory. They are not new EMBEO artifact addresses.
+The candidate factory address in the existing documentation is also listed in the public policy response (version 27's factory field); its runtime code was checked. That corroboration does not change this launch's evm_project route or policy 18. The fee contract was read from that factory, not copied from a reference address table. The block, code hashes, raw RPC requests/responses and decoded calls are saved in `artifacts/discovery/factory-reads.json`. The original block-26,142,850 capture was missing, and an attempted historical getter read required a provider archive token; the delivered capture is a new observation at the block above. These are candidate protocol addresses until the formal EMBEO quote/deployment binds the same factory. They are not new EMBEO artifact addresses.
 
-The official Check and supplied launch specification describe the split as **1% of trade value to the actual launch-paying wallet and 0.25% to IMD**. That is 80%/20% of the stated 1.25% fee, distinct from token transfers. Anyone can initiate distribution for those beneficiaries; fee claiming does not grant the caller fee ownership or LP withdrawal authority. Preserve the payer recorded by the factory, the effective IMD beneficiary, claim transaction receipts and amounts. Confirm the authenticated deployed ABI's collection/distribution and any owed-balance withdrawal flow before calling it; this task sent no claim transaction. The service payment payee, trading-fee recipient and protocol treasury are separate addresses in discovery.
+The supplied launch specification describes the split as **1% of trade value to the actual launch-paying wallet and 0.25% to IMD**. That is 80%/20% of the stated 1.25% fee, distinct from token transfers. Anyone can initiate distribution for those beneficiaries; fee claiming does not grant the caller fee ownership or LP withdrawal authority. Preserve the payer recorded by the factory, the effective IMD beneficiary, claim transaction receipts and amounts. Confirm the authenticated deployed ABI's collection/distribution and any owed-balance withdrawal flow before calling it; the saved getters alone do not verify that flow or split, and this task sent no claim transaction. The service payment payee, trading-fee recipient and protocol treasury are separate addresses in discovery.
 
-For custody evidence, the historical mainnet receipt's PoolManager `ModifyLiquidity` event records **the factory as sender**, not the issuing wallet. Policy 18 also has a protocol `owners.lpPosition` default of `0xcecc29b037f5064fcdf45a5c318f132ef76aa551`; that policy field alone does not establish who can operate a direct PoolManager position. It must be reconciled with the actual factory implementation and new position records. A pool is identified by its full v4 poolKey/poolId under PoolManager, not necessarily a separate pair contract address or an issuer-owned LP NFT.
+The historical mainnet liquidity receipt is not included, so this package draws no custody conclusion from its logs. The saved policy 18 has a protocol `owners.lpPosition` default of `0xcecc29b037f5064fcdf45a5c318f132ef76aa551`; that policy field alone does not establish who can operate a direct PoolManager position. It must be reconciled with the actual factory implementation and new position records. A pool is identified by its full v4 poolKey/poolId under PoolManager, not necessarily a separate pair contract address or an issuer-owned LP NFT.
 
 **Remaining custody blocker:** verified factory/fee source and a complete authoritative ABI were not available from the supplied inputs or the explorer source lookups performed here. Getter results and historical logs cannot prove all rights to remove liquidity, collect principal, change recipients, rescue funds or change future fee settings. The new deployment handoff must identify the actual position holder, withdrawal authority, fee-claim authority and any admin powers, and whether those powers apply to future or existing pools. Do not describe LP principal as issuer-owned, burned or permanently locked on this evidence. Project `owner` does not automatically own it. This limitation does not require a custom token, hook or application contract.
 
