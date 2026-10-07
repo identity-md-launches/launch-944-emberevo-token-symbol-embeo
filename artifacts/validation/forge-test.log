@@ -1,0 +1,44 @@
+No files changed, compilation skipped
+
+Ran 19 tests for test/LaunchToken.t.sol:LaunchTokenTest
+[PASS] testFuzz_overspendingRevertsWithoutStateChange(uint256,uint256) (runs: 512, μ: 119905, ~: 120057)
+[PASS] testFuzz_transferFromExactAllowance(uint256) (runs: 512, μ: 137991, ~: 138693)
+[PASS] testFuzz_transfersConserveSupply(uint256,uint256) (runs: 512, μ: 180269, ~: 181972)
+[PASS] test_approveReplaceRevokeAndSpend() (gas: 236274)
+[PASS] test_constructorEmitsOneMint() (gas: 9127)
+[PASS] test_contractRecipientsReceiveWithoutCallbacksOrSupplyReduction() (gas: 238186)
+[PASS] test_create2ConstructorMintsToFactoryAndPlainTransfersSupportAllocation() (gas: 395695)
+[PASS] test_infiniteAllowanceRetainsStandardERC20Semantics() (gas: 126622)
+[PASS] test_insufficientBalanceRevertsAtomically() (gas: 50599)
+[PASS] test_metadataAndEntireSupplyBelongToConstructorCaller() (gas: 84336)
+[PASS] test_noPrivilegedOrExtensionSelectorsForDeployerIssuerOrStranger() (gas: 1490203)
+[PASS] test_rejectsETHAndUnknownCalls() (gas: 58861)
+[PASS] test_runtimeBoundedAndNoEscapeOpcodes() (gas: 780614)
+[PASS] test_transferEmitsExactAmountWithoutTax() (gas: 99296)
+[PASS] test_transferFromFailureRollsBackAllowance() (gas: 192192)
+[PASS] test_transferToZeroRevertsEvenForZeroAmount() (gas: 71882)
+[PASS] test_unapprovedSpenderCannotTransfer() (gas: 51083)
+[PASS] test_zeroAddressApprovalsAndTransferSourceRevert() (gas: 106413)
+[PASS] test_zeroAndSelfTransfers() (gas: 131978)
+Suite result: ok. 19 passed; 0 failed; 0 skipped; finished in 64.31ms (116.71ms CPU time)
+
+Ran 1 test for test/LaunchToken.invariant.t.sol:LaunchTokenInvariantTest
+[PASS]
+LaunchTokenInvariantTest invariants:
+[PASS] invariant_allowancesMatchExplicitAuthorizations
+[PASS] invariant_fixedSupplyAndExactBalances
+ LaunchTokenInvariantTest invariants (runs: 128, calls: 8192, reverts: 0)
+
+╭--------------+--------------+-------+---------+----------╮
+| Contract     | Selector     | Calls | Reverts | Discards |
++==========================================================+
+| TokenActions | approve      | 2664  | 0       | 0        |
+|--------------+--------------+-------+---------+----------|
+| TokenActions | transfer     | 2744  | 0       | 0        |
+|--------------+--------------+-------+---------+----------|
+| TokenActions | transferFrom | 2784  | 0       | 0        |
+╰--------------+--------------+-------+---------+----------╯
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 9.71s (9.70s CPU time)
+
+Ran 2 test suites in 9.71s (9.77s CPU time): 20 tests passed, 0 failed, 0 skipped (20 total tests)

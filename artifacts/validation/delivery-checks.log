@@ -1,0 +1,15 @@
+Self-contained Solidity 0.8.26 compiler input reproduces creation/runtime bytecode exactly and ABI entries ignoring order. Metadata is checked against the Forge build by the exporter.
+missing artifacts/LaunchToken.abi.json: rejected with exit 1 and matching path
+altered artifacts/LaunchToken.abi.json: rejected with exit 1 and matching path
+missing artifacts/LaunchToken.creation.hex: rejected with exit 1 and matching path
+altered artifacts/LaunchToken.creation.hex: rejected with exit 1 and matching path
+missing artifacts/LaunchToken.runtime.hex: rejected with exit 1 and matching path
+altered artifacts/LaunchToken.runtime.hex: rejected with exit 1 and matching path
+missing artifacts/LaunchToken.metadata.json: rejected with exit 1 and matching path
+altered artifacts/LaunchToken.metadata.json: rejected with exit 1 and matching path
+missing artifacts/solc-input.json: rejected with exit 1 and matching path
+altered artifacts/solc-input.json: rejected with exit 1 and matching path
+missing artifacts/build.json: rejected with exit 1 and matching path
+altered artifacts/build.json: rejected with exit 1 and matching path
+Restored artifacts: check passed.
+All relative README/documentation links resolve in the delivery copy.

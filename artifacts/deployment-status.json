@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "status": "local_build_only_official_deployment_pending",
+  "evidenceScope": "Contributor handoff status, not a protocol API response, quote, chain observation or independent attestation.",
+  "requestedLaunch": {
+    "kind": "evm_project",
+    "chainId": 1,
+    "pairWith": "eth",
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "token": {
+      "contract": "src/LaunchToken.sol:LaunchToken",
+      "name": "EmberEVO",
+      "symbol": "EMBEO",
+      "decimals": 18,
+      "supplyBaseUnits": "1000000000000000000000000000"
+    },
+    "contracts": [],
+    "owner": "0x1c651928150daddda9c2c040a9d4901d862f8ec4",
+    "intendedPayingWallet": "0x1c651928150daddda9c2c040a9d4901d862f8ec4",
+    "economics": {
+      "poolBps": 8600,
+      "remainderTo": "0x1c651928150daddda9c2c040a9d4901d862f8ec4"
+    }
+  },
+  "expectationsFromAssignmentNotObservedTerms": {
+    "openingCapWei": "10000000000000000000",
+    "poolFeeMillionths": 12500,
+    "payingWalletFeeMillionths": 10000,
+    "imdFeeMillionths": 2500,
+    "servicePayment": {
+      "chainId": 1,
+      "symbol": "IMD",
+      "amountTokens": "0.5"
+    }
+  },
+  "discoveryEvidence": {
+    "status": "not_included_requires_official_check_quote_and_factory_reads",
+    "capabilities": null,
+    "chainPolicy": null,
+    "policyVersion": null,
+    "policyDigest": null,
+    "factoryReads": null,
+    "effectivePoolFeeMillionths": null
+  },
+  "quote": {
+    "status": "not_obtained_or_signed_in_this_task",
+    "preparedInput": null,
+    "challengeInput": null,
+    "inputHash": null,
+    "policyVersion": null,
+    "paymentAsset": null,
+    "paymentAmountBaseUnits": null,
+    "paymentRecipient": null,
+    "expiry": null
+  },
+  "deployment": {
+    "status": "pending_official_protocol_handoff",
+    "chainId": null,
+    "factoryAddress": null,
+    "tokenAddress": null,
+    "distributorAddress": null,
+    "initializationGuardAddress": null,
+    "transactionHash": null,
+    "blockNumber": null,
+    "receipt": null,
+    "poolKey": null,
+    "poolId": null,
+    "effectivePoolFeeMillionths": null,
+    "initializedSqrtPriceX96": null,
+    "actualPayingWallet": null,
+    "feeBeneficiaries": null,
+    "lpPosition": null,
+    "lpCustodyAndPowers": null,
+    "allocationTransfers": null,
+    "merkleRootProofsAndUnlocks": null,
+    "sourceVerification": null,
+    "independentAttestation": null
+  },
+  "localEvidence": {
+    "buildRecord": "artifacts/build.json",
+    "abi": "artifacts/LaunchToken.abi.json",
+    "creationBytecode": "artifacts/LaunchToken.creation.hex",
+    "runtimeBytecode": "artifacts/LaunchToken.runtime.hex",
+    "metadata": "artifacts/LaunchToken.metadata.json",
+    "compilerInput": "artifacts/solc-input.json",
+    "validation": "artifacts/validation/"
+  },
+  "transactionsSentByThisTask": false,
+  "note": "Unknown observations use null; zero address above means native ETH only. Expected terms must be confirmed and changed terms surfaced before signing. No new token address or deployment is asserted. Historical mainnet test EMVO is separate, with its notice retained in README.md and docs/TOKEN.md."
+}

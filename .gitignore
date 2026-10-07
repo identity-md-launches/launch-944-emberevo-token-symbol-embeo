@@ -3,3 +3,8 @@
 /broadcast/
 /test/scratch/
 __pycache__/
+
+# Delivered verification evidence and revision responses must survive local excludes.
+!/artifacts/
+!/artifacts/**
+!/.imd-responses.json

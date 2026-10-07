@@ -1,0 +1,36 @@
+{
+  "scope": "Local contributor reproduction, not independent attestation or deployment evidence",
+  "inputSourceSha256": {
+    "src/LaunchToken.sol": "ef5f1a475907ca50e7f56a7ecb53076e489425fba8441c87170c41da692a6bc4",
+    "test/LaunchToken.invariant.t.sol": "6cd3888551da78424978e42670e372ae253bc9842262479f23b838e4337d65ef",
+    "test/LaunchToken.t.sol": "3f01e36633c1ea818c9020b6cf1ceff60a2d9cb5f759d6dd4b981a19bbbb2082",
+    "foundry.toml": "3721643f777a1e08eac691d96f484ba57fd4735f116835a551e9ff3e2af86371",
+    "scripts/export_artifacts.py": "139fe3e5704b48e7299131129cbb074a883291bc47efe467f482b918dcb89494"
+  },
+  "testReadmePresent": false,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/export_artifacts.py",
+        "--check"
+      ],
+      "startedAtUtc": "2026-10-07T21:05:39.721654+00:00",
+      "exitCode": 1,
+      "output": "missing-artifacts-before-fix.log",
+      "outputSha256": "b45c1b6de29e0dea7fd6fc855433869340d6f57b25bef23cb123c1ce450bc940"
+    },
+    {
+      "command": [
+        "forge",
+        "test",
+        "--match-path",
+        "test/LaunchToken.invariant.t.sol"
+      ],
+      "startedAtUtc": "2026-10-07T21:05:39.851119+00:00",
+      "exitCode": 0,
+      "output": "invariant-finding-reproduction.log",
+      "outputSha256": "d3be3f4e8f50c2da50298e5fdae20aa7b8008d6b7df64d023869b890daafabe9"
+    }
+  ]
+}

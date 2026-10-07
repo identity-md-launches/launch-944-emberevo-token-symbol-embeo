@@ -1,0 +1,52 @@
+{
+  "scope": "Local contributor checks of a temporary copy built from Git-visible ordinary files; no RPC or transactions",
+  "excludedFromCopy": [
+    ".git/",
+    ".imd/",
+    "out/",
+    "cache/",
+    "test/scratch/"
+  ],
+  "commands": [
+    {
+      "command": [
+        "forge",
+        "build",
+        "--offline"
+      ],
+      "startedAtUtc": "2026-10-07T21:09:44.963804+00:00",
+      "exitCode": 0,
+      "output": "clean-offline-build.log",
+      "outputSha256": "df5512afef6bc8f15c1fe52e79f77d0ea813b5cbb75c7600d9607d3883576221"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/export_artifacts.py",
+        "--check"
+      ],
+      "startedAtUtc": "2026-10-07T21:09:48.227378+00:00",
+      "exitCode": 0,
+      "output": "clean-export-artifacts-check.log",
+      "outputSha256": "277dcd4f24764c611b07fcb748bbc4308ce01598b4b664c895b70c9ad528a114"
+    }
+  ],
+  "additionalChecks": "delivery-checks.log",
+  "additionalChecksSha256": "3d94f0af186094ed0259427562a8c1582e9e045d18cf3056a018602c43c53707",
+  "artifactChecks": {
+    "missingFilesRejected": 6,
+    "alteredFilesRejected": 6,
+    "restoredFilesMatch": true
+  },
+  "compilerInputReproducesBytecodeAndAbiEntries": true,
+  "relativeDocumentationLinksResolve": true,
+  "copiedEvidenceSha256": {
+    "artifacts/LaunchToken.abi.json": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542",
+    "artifacts/LaunchToken.creation.hex": "98e448bf8c3eb5ead92431cd42bde86efc70ef938df198459a884dc094b7eaa5",
+    "artifacts/LaunchToken.runtime.hex": "26b716ee72ddbcdba975a608e999d22cb27f6c30c1bac048feadfa7652b5658e",
+    "artifacts/LaunchToken.metadata.json": "a5de304b3ebbdc6c65a682fee7b3e94deb90e84891db33b51b15d1115ee075b3",
+    "artifacts/solc-input.json": "67c1adb8f16de73e39f0bfb1c80f6822e2296ed033535bd568d2b5f64c323321",
+    "artifacts/build.json": "1d49ebdbd68782594ce558f29526fc39c5af176336fc3740cef814a33c8dca3f",
+    "artifacts/deployment-status.json": "4b549e9283f4fcef580688298082e1b23a4e03b2ff40f78075381f7523c43b1e"
+  }
+}

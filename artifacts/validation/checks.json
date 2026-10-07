@@ -1,0 +1,49 @@
+{
+  "scope": "Local contributor checks only, not independent attestation or deployment evidence",
+  "forgeVersion": "forge Version: 1.8.3\nCommit SHA: cae51ad458f6abb64852b7709eb784352429825d\nBuild Timestamp: 2026-09-15T10:46:16.519267388Z (1789469176)\nBuild Profile: dist",
+  "buildRecordSha256": "1d49ebdbd68782594ce558f29526fc39c5af176336fc3740cef814a33c8dca3f",
+  "commands": [
+    {
+      "command": [
+        "forge",
+        "build"
+      ],
+      "startedAtUtc": "2026-10-07T21:07:52.560951+00:00",
+      "exitCode": 0,
+      "output": "forge-build.log",
+      "outputSha256": "ebe83663236b4ed5f022b5a7ca1ab749d1980765e47d5347b77a686aa1f21c3c"
+    },
+    {
+      "command": [
+        "forge",
+        "test"
+      ],
+      "startedAtUtc": "2026-10-07T21:07:52.828091+00:00",
+      "exitCode": 0,
+      "output": "forge-test.log",
+      "outputSha256": "28096f65d4c5c1d91441afc5ee8a4296bab78b412de5444f078d510b1206de25"
+    },
+    {
+      "command": [
+        "forge",
+        "fmt",
+        "--check"
+      ],
+      "startedAtUtc": "2026-10-07T21:08:02.726163+00:00",
+      "exitCode": 0,
+      "output": "forge-fmt-check.log",
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/export_artifacts.py",
+        "--check"
+      ],
+      "startedAtUtc": "2026-10-07T21:08:02.750314+00:00",
+      "exitCode": 0,
+      "output": "export-artifacts-check.log",
+      "outputSha256": "277dcd4f24764c611b07fcb748bbc4308ce01598b4b664c895b70c9ad528a114"
+    }
+  ]
+}

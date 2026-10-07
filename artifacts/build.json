@@ -1,0 +1,37 @@
+{
+  "status": "local_build_not_deployment_or_independent_attestation",
+  "contract": "src/LaunchToken.sol:LaunchToken",
+  "compiler": "0.8.26+commit.8a97fa7a",
+  "evmVersion": "cancun",
+  "optimizer": true,
+  "optimizerRuns": 200,
+  "bytecodeHash": "none",
+  "constructorArguments": [],
+  "creationCodeBytes": 2608,
+  "runtimeCodeBytes": 1722,
+  "creationCodeKeccak256": "0x62b4e90e8934bc74affe87ac8aafd4b4c6d8f143189664cfa689253eb95a8814",
+  "runtimeCodeKeccak256": "0x01fb92b21a7414fcac4480618142f8968a5d2bae8071370fb5e9369b97fc55bc",
+  "sourceSha256": {
+    "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol": "4aea87243e6de38804bf8737bf86f750443d3b5e63dd0fd0b7ad92f77cdbd3e3",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": "2d874da1c1478ed22a2d30dcf1a6ec0d09a13f897ca680d55fb49fbcc0e0c5b1",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": "6f2faae462e286e24e091d7718575179644dc60e79936ef0c92e2d1ab3ca3cee",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": "1d079c20a192a135308e99fa5515c27acfbb071e6cdb0913b13634e630865939",
+    "lib/openzeppelin-contracts/contracts/utils/Context.sol": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "src/LaunchToken.sol": "ef5f1a475907ca50e7f56a7ecb53076e489425fba8441c87170c41da692a6bc4"
+  },
+  "configurationSha256": {
+    "foundry.toml": "3721643f777a1e08eac691d96f484ba57fd4735f116835a551e9ff3e2af86371",
+    "remappings.txt": "79f11452d3ebfaa9c9c1cf7afa0dce42dda3bced35f7047ea30e850a1a61cfb1",
+    "launch.json": "36f5d19092c5c128da739b70f28aff937168d9e60776dc70b2855733f661b20e",
+    "launch/request.json": "c3ce126785f751bff5940e42de190c6c63ae522f6625aaedca1fa5c15f7f0b46"
+  },
+  "artifactSha256": {
+    "artifacts/LaunchToken.abi.json": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542",
+    "artifacts/LaunchToken.creation.hex": "98e448bf8c3eb5ead92431cd42bde86efc70ef938df198459a884dc094b7eaa5",
+    "artifacts/LaunchToken.runtime.hex": "26b716ee72ddbcdba975a608e999d22cb27f6c30c1bac048feadfa7652b5658e",
+    "artifacts/LaunchToken.metadata.json": "a5de304b3ebbdc6c65a682fee7b3e94deb90e84891db33b51b15d1115ee075b3",
+    "artifacts/solc-input.json": "67c1adb8f16de73e39f0bfb1c80f6822e2296ed033535bd568d2b5f64c323321"
+  },
+  "logoSha256": "771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4",
+  "note": "SHA-256 here hashes exact file bytes, not the protocol canonical inputHash. No signed quote is claimed."
+}
