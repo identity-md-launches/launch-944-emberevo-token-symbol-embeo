@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EmberEVO（EMBEO）代幣資訊與費用查詢</title>
+  <meta name="description" content="EmberEVO（EMBEO）的正式 Ethereum 合約、部署紀錄、聯絡資訊與只讀交易費用查詢。">
+  <link rel="icon" type="image/png" href="assets/emberevo-flame-64.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#fees">前往費用查詢</a>
+  <header class="site-header"><a href="https://imdember.com/">IMD Ember World</a><span>獨立社群專案</span></header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <img src="assets/emberevo-flame-256.png" width="104" height="104" alt="EmberEVO 橘色火焰標誌">
+      <div><h1 id="title">EmberEVO <span>EMBEO</span></h1><p class="lead">代幣資訊與費用查詢</p><p>核對正式合約、查看部署紀錄，並查詢交易費用的分配狀態。</p></div>
+    </section>
+    <section class="identity" aria-labelledby="identity-title">
+      <div><h2 id="identity-title">正式代幣</h2><p>Ethereum 主網 · 原生 ETH 配對</p><div class="address-line"><code id="token-address">0x2b82cdeb8477415d541799abb0cc48044c8ea5f3</code><button id="copy-address" type="button">複製地址</button></div><p id="copy-status" role="status" class="quiet"></p></div>
+      <dl><div><dt>名稱 / 符號</dt><dd>EmberEVO / EMBEO</dd></div><div><dt>初始供應量</dt><dd>1,000,000,000 枚</dd></div><div><dt>精度 / 網路</dt><dd>18 / Ethereum（chain ID 1）</dd></div><div><dt>初始配置</dt><dd>86% 池子、10% Swarm、4% 發幣錢包</dd></div></dl>
+    </section>
+    <nav class="source-links" aria-label="正式代幣來源">
+      <a href="https://etherscan.io/address/0x2b82cdeb8477415d541799abb0cc48044c8ea5f3#code" target="_blank" rel="noopener noreferrer">Etherscan 已驗證原始碼</a>
+      <a href="https://explorer.imd.fun/token/0x2b82cdeb8477415d541799abb0cc48044c8ea5f3" target="_blank" rel="noopener noreferrer">IMD 代幣頁與交易入口</a>
+      <a href="https://www.geckoterminal.com/eth/pools/0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a" target="_blank" rel="noopener noreferrer">EMBEO / ETH 池子</a>
+    </nav>
+    <section class="test-notice" aria-labelledby="old-title"><h2 id="old-title">請勿購買歷史測試 EMVO</h2><p>舊 EmberEvo（EMVO）是 Ethereum 主網上的歷史測試發行，與正式 EMBEO 不同，不適用正式會員資格。舊合約與池子仍存在；沒有自動換幣或補償承諾。</p><code>0x7A427b94547232356cF212Fd1C668e8EB4069a46</code></section>
+    <section id="fees" class="fees" aria-labelledby="fees-title">
+      <div class="section-heading"><div><h2 id="fees-title">交易費用</h2><p>實際池費率 <strong>1.25%</strong>。官方分配比例為專案 80%、網路 20%。</p></div><button id="refresh" type="button">更新鏈上資料</button></div>
+      <p class="read-note">此表查詢指定發幣錢包的交易費用，只讀資料，無須連接錢包。查詢不會領取費用或執行交易。畫面金額最多顯示 8 位小數，完整數值見原始資料。</p>
+      <p id="read-status" role="status" aria-live="polite">正在讀取保存的核對資料。</p>
+      <p class="mobile-hint quiet">左右滑動表格查看完整欄位。</p>
+      <div class="table-scroll" role="region" aria-label="交易費用表格，可橫向捲動" tabindex="0"><table><caption>ETH 與 EMBEO 分開記帳，欄位間不相加。</caption><thead><tr><th scope="col">資產</th><th scope="col">本池預估專案份額</th><th scope="col">合約內待補付</th><th scope="col">Factory 已付款紀錄</th></tr></thead><tbody>
+        <tr><th scope="row">ETH</th><td id="ETH-estimate">未確認</td><td id="ETH-owed">未確認</td><td id="ETH-paid">未確認</td></tr>
+        <tr><th scope="row">EMBEO</th><td id="EMBEO-estimate">未確認</td><td id="EMBEO-owed">未確認</td><td id="EMBEO-paid">未確認</td></tr>
+      </tbody></table></div>
+      <div class="explanations"><p><strong>本池預估專案份額</strong><br>以尚未收集的池費用乘上專案份額，取最小單位整數。來自唯讀模擬，金額會隨交易變動，尚未入帳。</p><p><strong>合約內待補付</strong><br>之前分配時未能成功付款、仍欠這個錢包的金額。這是 Factory 的錢包／幣種共用記帳，可能包含其他發行。</p><p><strong>Factory 已付款紀錄</strong><br>完整掃描期間內，Factory 對這個錢包與幣種的成功付款事件。ETH 可能包含其他發行；不是本池專屬收入或錢包全部收入。</p></div>
+      <p class="beneficiary">核對收款錢包：<code>0x1C651928150DADDDA9C2C040a9D4901d862f8eC4</code></p>
+      <p id="history-status" class="quiet">歷史付款紀錄尚未核對。</p>
+      <details><summary>查詢時間與原始資料</summary><dl class="evidence"><div><dt>資料區塊</dt><dd id="block">未確認</dd></div><div><dt>區塊 UTC 時間</dt><dd id="block-time">未確認</dd></div><div><dt>區塊雜湊</dt><dd><code id="block-hash">未確認</code></dd></div><div><dt>讀取來源</dt><dd id="provider">未確認</dd></div></dl><a href="data/latest.json" target="_blank" rel="noopener noreferrer">開啟保存的 JSON 快照</a><p id="simulation-status" class="quiet"></p></details>
+    </section>
+    <section class="records" aria-labelledby="records-title"><h2 id="records-title">部署與聯絡資料</h2><dl>
+      <div><dt>部署</dt><dd><a href="https://etherscan.io/tx/0xd926c03bafe9e92252b37f44a0ea7bf1116f5c8a8cefb2aee7a3d28363d6aa09" target="_blank" rel="noopener noreferrer">Ethereum 部署交易</a> · IMD Launch #944</dd></div>
+      <div><dt>交付原始碼</dt><dd><a href="https://github.com/identity-md-launches/launch-944-emberevo-token-symbol-embeo/tree/cecf25b92d44568f8a0f81c34f4b634df905d1e5" target="_blank" rel="noopener noreferrer">查看發行時固定版本</a></dd></div>
+      <div><dt>官網</dt><dd><a href="https://imdember.com/" target="_blank" rel="noopener noreferrer">imdember.com</a></dd></div><div><dt>官方 X</dt><dd><a href="https://x.com/tungweb3" target="_blank" rel="noopener noreferrer">@tungweb3</a></dd></div>
+    </dl><p class="quiet">原始碼驗證表示程式碼比對通過，不是安全認證。平台 Logo 與 Token Info 登記各自處理；本頁不代表申請已核准。</p></section>
+  </main>
+  <footer>EmberEVO 是獨立社群專案，並非 Identity.md 官方代幣或背書。<br>本機審閱版，尚未發布到正式官網。</footer>
+  <noscript><p>代幣資料與來源連結仍可查看。費用查詢需開啟 JavaScript，或直接查看 <a href="data/latest.json">保存的資料</a>。</p></noscript>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

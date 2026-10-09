@@ -1,0 +1,83 @@
+[
+  {
+    "reference": "scripts/test-fees.mjs",
+    "referenceSha256": "8b83ecacbec7c4888d3e55743d5d49f0153c2066aeb347954413e3f63c02347b",
+    "destination": "web/embeo/scripts/test-fees.mjs",
+    "bytes": 8056,
+    "sha256": "085e038dc2bcc85f705bf24466147c5c4347eac97a8c9786c2c160bfa7b9ccf8",
+    "byteIdentical": false,
+    "published": false
+  },
+  {
+    "reference": "web/app.mjs",
+    "referenceSha256": "3ceb22aa4d6c9d2434a08f9414ef8c630a65d4f938cc524141024c291a902443",
+    "destination": "web/embeo/app.mjs",
+    "bytes": 5306,
+    "sha256": "30a19b5115529767e92dbc3bf8adfe3535ce81263e467c2a7d63601d47846250",
+    "byteIdentical": false,
+    "published": true
+  },
+  {
+    "reference": "web/assets/emberevo-flame-256.png",
+    "referenceSha256": "e9b5f5fd1bcf7a72424c17977a4b8379d4032f9f8e6890bc373757c25512760d",
+    "destination": "web/embeo/assets/emberevo-flame-256.png",
+    "bytes": 21535,
+    "sha256": "e9b5f5fd1bcf7a72424c17977a4b8379d4032f9f8e6890bc373757c25512760d",
+    "byteIdentical": true,
+    "published": false
+  },
+  {
+    "reference": "web/assets/emberevo-flame-64.png",
+    "referenceSha256": "771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4",
+    "destination": "web/embeo/assets/emberevo-flame-64.png",
+    "bytes": 2713,
+    "sha256": "771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4",
+    "byteIdentical": true,
+    "published": true
+  },
+  {
+    "reference": "web/data/latest.json",
+    "referenceSha256": "ad0c385738d6fd3c47bb590b8d5aff360315a1698f6efa36cbaf650adbac92ad",
+    "destination": "web/embeo/data/latest.json",
+    "bytes": 4652,
+    "sha256": "ad0c385738d6fd3c47bb590b8d5aff360315a1698f6efa36cbaf650adbac92ad",
+    "byteIdentical": true,
+    "published": true
+  },
+  {
+    "reference": "web/fee-reader.mjs",
+    "referenceSha256": "e12397ef75cc4ef1d8138e443cf2d0a0aa7fd507d9ec6dc2772bb66418e1f977",
+    "destination": "web/embeo/fee-reader.mjs",
+    "bytes": 15660,
+    "sha256": "a5b14ecb0540ad1b398c0d24fe2fc6297de83df67266c8e3b05041f796ac9221",
+    "byteIdentical": false,
+    "published": true
+  },
+  {
+    "reference": "web/index.html",
+    "referenceSha256": "946ae942278b7fb43099b4acfcd2da039244693d15feb2b35c6d47ddf804f9a4",
+    "destination": "web/embeo/index.html",
+    "bytes": 8221,
+    "sha256": "4d42c335e751365703f4d2d64de0c9f7ff31968f1b3d092e954eb83ad3c5a0c6",
+    "byteIdentical": false,
+    "published": true
+  },
+  {
+    "reference": "web/styles.css",
+    "referenceSha256": "d92d16b4b99519556e3983a94aa466f14b71caa715f53e5c08834f6a59508b25",
+    "destination": "web/embeo/styles.css",
+    "bytes": 6847,
+    "sha256": "de50d2901e0bf68eaf0ae02aca577d773d627d5b6ffa992d6c7ae20ee8b4bd05",
+    "byteIdentical": false,
+    "published": true
+  },
+  {
+    "reference": "web/token-config.mjs",
+    "referenceSha256": "29c64c170cefa9bb503f24556a4ebc349c544da33c022a7aceee97a54feaf1d9",
+    "destination": "web/embeo/token-config.mjs",
+    "bytes": 2047,
+    "sha256": "83e9cdfdb4b34cea0b773749abfd5810dd9e0dfb7a3b4a6af87121bc97c7f65c",
+    "byteIdentical": false,
+    "published": true
+  }
+]

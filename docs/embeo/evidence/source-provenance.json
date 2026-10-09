@@ -1,0 +1,23 @@
+{
+  "sourceUrl": "https://eth.blockscout.com/api/v2/smart-contracts/0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+  "status": "Blockscout partially verified factory source; no independent recompilation",
+  "isPartiallyVerified": true,
+  "files": [
+    {
+      "originalPath": "src/LaunchFees.sol",
+      "path": "docs/embeo/evidence/LaunchFees.sol.txt",
+      "sha256": "a4cd760816c6fac89eec431724a9f5b1af64ab74c5cdadc057f4d66470618d71"
+    },
+    {
+      "originalPath": "src/PoolFees.sol",
+      "path": "docs/embeo/evidence/PoolFees.sol.txt",
+      "sha256": "737509ccca61d83f843bb19c7543054972ce496e7435e0e83c770efe7cdc27ac"
+    }
+  ],
+  "checkedBlock": 26152830,
+  "sourceProviderDeployedBytecodeSha256": "c0704d5d18e592c1332f6e77c61012218538ea0a31cb167956d94149df5d9a72",
+  "rpcDeployedBytecodeSha256": "c0704d5d18e592c1332f6e77c61012218538ea0a31cb167956d94149df5d9a72",
+  "runtimeBytesMatch": true,
+  "independentFullRecompilation": "not performed",
+  "recordedAt": "2026-10-09T18:08:21.500200+00:00"
+}

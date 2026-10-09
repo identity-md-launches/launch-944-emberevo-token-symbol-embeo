@@ -1,0 +1,166 @@
+TAP version 13
+# Subtest: independent owed failure preserves the other currency, simulation and history
+ok 1 - independent owed failure preserves the other currency, simulation and history
+  ---
+  duration_ms: 5.899017
+  type: 'test'
+  ...
+# Subtest: short ABI zero is unknown, not a valid zero balance
+ok 2 - short ABI zero is unknown, not a valid zero balance
+  ---
+  duration_ms: 0.962779
+  type: 'test'
+  ...
+# Subtest: pinned block may not exceed finalized height
+ok 3 - pinned block may not exceed finalized height
+  ---
+  duration_ms: 2.530886
+  type: 'test'
+  ...
+# Subtest: block hash change rejects entire mixed read
+ok 4 - block hash change rejects entire mixed read
+  ---
+  duration_ms: 1.170172
+  type: 'test'
+  ...
+# Subtest: factory must point to the source-checked fee contract
+ok 5 - factory must point to the source-checked fee contract
+  ---
+  duration_ms: 0.989751
+  type: 'test'
+  ...
+# Subtest: changed split is rejected
+ok 6 - changed split is rejected
+  ---
+  duration_ms: 0.624626
+  type: 'test'
+  ...
+# Subtest: history above 80000 blocks stays null and issues no log queries
+ok 7 - history above 80000 blocks stays null and issues no log queries
+  ---
+  duration_ms: 0.902857
+  type: 'test'
+  ...
+# Subtest: chunk bounds cover a full interval exactly once per topic
+ok 8 - chunk bounds cover a full interval exactly once per topic
+  ---
+  duration_ms: 0.822857
+  type: 'test'
+  ...
+# Subtest: a provider mixing event filters cannot fabricate a history total
+ok 9 - a provider mixing event filters cannot fabricate a history total
+  ---
+  duration_ms: 0.819349
+  type: 'test'
+  ...
+# Subtest: reject receipt mismatch {"status":"0x0"}
+ok 10 - reject receipt mismatch {"status":"0x0"}
+  ---
+  duration_ms: 0.958756
+  type: 'test'
+  ...
+# Subtest: reject receipt mismatch {"transactionHash":"0x4444444444444444444444444444444444444444444444444444444444444444"}
+ok 11 - reject receipt mismatch {"transactionHash":"0x4444444444444444444444444444444444444444444444444444444444444444"}
+  ---
+  duration_ms: 1.319905
+  type: 'test'
+  ...
+# Subtest: reject receipt mismatch {"blockNumber":"0x1"}
+ok 12 - reject receipt mismatch {"blockNumber":"0x1"}
+  ---
+  duration_ms: 0.500228
+  type: 'test'
+  ...
+# Subtest: reject receipt mismatch {"blockHash":"0x4444444444444444444444444444444444444444444444444444444444444444"}
+ok 13 - reject receipt mismatch {"blockHash":"0x4444444444444444444444444444444444444444444444444444444444444444"}
+  ---
+  duration_ms: 0.39744
+  type: 'test'
+  ...
+# Subtest: reject receipt mismatch {"logs":[]}
+ok 14 - reject receipt mismatch {"logs":[]}
+  ---
+  duration_ms: 0.397456
+  type: 'test'
+  ...
+# Subtest: all monetary calculations conserve integer amounts, including uint256-scale values
+ok 15 - all monetary calculations conserve integer amounts, including uint256-scale values
+  ---
+  duration_ms: 2.328615
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: 0
+ok 16 - cached amounts must be bounded decimal strings or null: 0
+  ---
+  duration_ms: 0.751854
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: NaN
+ok 17 - cached amounts must be bounded decimal strings or null: NaN
+  ---
+  duration_ms: 0.55984
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: undefined
+ok 18 - cached amounts must be bounded decimal strings or null: undefined
+  ---
+  duration_ms: 0.492366
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: -1
+ok 19 - cached amounts must be bounded decimal strings or null: -1
+  ---
+  duration_ms: 0.462263
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: 1.0
+ok 20 - cached amounts must be bounded decimal strings or null: 1.0
+  ---
+  duration_ms: 0.504028
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: 01
+ok 21 - cached amounts must be bounded decimal strings or null: 01
+  ---
+  duration_ms: 0.457399
+  type: 'test'
+  ...
+# Subtest: cached amounts must be bounded decimal strings or null: 115792089237316195423570985008687907853269984665640564039457584007913129639936
+ok 22 - cached amounts must be bounded decimal strings or null: 115792089237316195423570985008687907853269984665640564039457584007913129639936
+  ---
+  duration_ms: 0.497223
+  type: 'test'
+  ...
+# Subtest: missing completion and time metadata cannot label a cache verified
+ok 23 - missing completion and time metadata cannot label a cache verified
+  ---
+  duration_ms: 2.226608
+  type: 'test'
+  ...
+# Subtest: fixed transport denies unsafe methods, selectors, endpoints and arguments before fetch
+ok 24 - fixed transport denies unsafe methods, selectors, endpoints and arguments before fetch
+  ---
+  duration_ms: 0.8648
+  type: 'test'
+  ...
+# Subtest: transport validates response id, errors and successful zero separately
+ok 25 - transport validates response id, errors and successful zero separately
+  ---
+  duration_ms: 26.863902
+  type: 'test'
+  ...
+# Subtest: reference saved snapshot remains byte-for-byte and passes stricter validation
+ok 26 - reference saved snapshot remains byte-for-byte and passes stricter validation
+  ---
+  duration_ms: 22.321199
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 157.257567

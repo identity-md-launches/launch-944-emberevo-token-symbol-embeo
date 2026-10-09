@@ -1,0 +1,126 @@
+{
+  "commit": "86d7d54b5230afeead17128ecf703976501ff729",
+  "manifestSha256": "299f6031e5925bd026985f4f0e7ad8a154c232303138030f5a6cf061762555a8",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 29,
+      "sha256": "4ea07f8d42a3764c0e463ee13a1dd0a3c64ae5bb327d72f3e173cd626e3d76a1",
+      "verified": true
+    },
+    {
+      "path": "CHECK_RESULT.md",
+      "bytes": 1427,
+      "sha256": "e03d6c638ef3474ead26990b8fec796eb075d57df018d82330c2ec8ec3476fe1",
+      "verified": true
+    },
+    {
+      "path": "FEES.md",
+      "bytes": 3690,
+      "sha256": "f9fe85179e4f054ad809f11792a4980b52cb6b825a5141aa077faee87f5fcfd0",
+      "verified": true
+    },
+    {
+      "path": "POSTDEPLOY.md",
+      "bytes": 4656,
+      "sha256": "b393704cc5561604a099c937cbd7eab64c385cce400b3f7632b88e23165f5a49",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 2803,
+      "sha256": "eff507d5fd94d0eb4c96d596f8cbf7d508e56fc1dd7c006f40084e306e223b55",
+      "verified": true
+    },
+    {
+      "path": "SWARM_CONTINUATION_BRIEF.md",
+      "bytes": 4726,
+      "sha256": "b2141bc9f3dc918f43c64b1214654ed556be09516cb17651d268d3cad4c7b816",
+      "verified": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4273,
+      "sha256": "b7fefad78bf0f75bd873d3f2028da6b10f2a8983afc1342ade6b2e3680957118",
+      "verified": true
+    },
+    {
+      "path": "WORLD_HANDOFF.md",
+      "bytes": 3345,
+      "sha256": "dd8e5e611e5862ac8e44b8e9e9c92c9bc403058dcf185d89859106520afcb7c4",
+      "verified": true
+    },
+    {
+      "path": "github/README_POSTDEPLOY_HEADER.md",
+      "bytes": 1516,
+      "sha256": "c293d3de18a32c4b60cf6f1c0bc5a785e455a719b9834cfc8f988924fc437938",
+      "verified": true
+    },
+    {
+      "path": "scripts/serve-preview.mjs",
+      "bytes": 1637,
+      "sha256": "4a521d9fcb68dc9ac0d382184118f5987b22e0f7bfee1ab0a45865d02670e841",
+      "verified": true
+    },
+    {
+      "path": "scripts/test-fees.mjs",
+      "bytes": 7906,
+      "sha256": "8b83ecacbec7c4888d3e55743d5d49f0153c2066aeb347954413e3f63c02347b",
+      "verified": true
+    },
+    {
+      "path": "swarm-continuation.draft.json",
+      "bytes": 3393,
+      "sha256": "e442c1985e5b61757e3930abe446400e72aa402b3a5c6654083cc619cbe6e81b",
+      "verified": true
+    },
+    {
+      "path": "web/app.mjs",
+      "bytes": 3371,
+      "sha256": "3ceb22aa4d6c9d2434a08f9414ef8c630a65d4f938cc524141024c291a902443",
+      "verified": true
+    },
+    {
+      "path": "web/assets/emberevo-flame-256.png",
+      "bytes": 21535,
+      "sha256": "e9b5f5fd1bcf7a72424c17977a4b8379d4032f9f8e6890bc373757c25512760d",
+      "verified": true
+    },
+    {
+      "path": "web/assets/emberevo-flame-64.png",
+      "bytes": 2713,
+      "sha256": "771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4",
+      "verified": true
+    },
+    {
+      "path": "web/data/latest.json",
+      "bytes": 4652,
+      "sha256": "ad0c385738d6fd3c47bb590b8d5aff360315a1698f6efa36cbaf650adbac92ad",
+      "verified": true
+    },
+    {
+      "path": "web/fee-reader.mjs",
+      "bytes": 12958,
+      "sha256": "e12397ef75cc4ef1d8138e443cf2d0a0aa7fd507d9ec6dc2772bb66418e1f977",
+      "verified": true
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 6898,
+      "sha256": "946ae942278b7fb43099b4acfcd2da039244693d15feb2b35c6d47ddf804f9a4",
+      "verified": true
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 5495,
+      "sha256": "d92d16b4b99519556e3983a94aa466f14b71caa715f53e5c08834f6a59508b25",
+      "verified": true
+    },
+    {
+      "path": "web/token-config.mjs",
+      "bytes": 2013,
+      "sha256": "29c64c170cefa9bb503f24556a4ebc349c544da33c022a7aceee97a54feaf1d9",
+      "verified": true
+    }
+  ]
+}

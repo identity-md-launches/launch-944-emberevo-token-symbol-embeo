@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-09T17:59:16.854Z",
+  "attempts": [
+    {
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "status": "unavailable",
+      "error": "Error: Command failed: curl --silent --show-error --fail --max-time 15 --max-filesize 4194304 -H content-type: application/json --data {\"jsonrpc\":\"2.0\",\"id\":4,\"method\":\"eth_call\",\"params\":[{\"to\":\"0x2b82cdeb8477415d541799abb0cc48044c8ea5f3\",\"data\":\"0x06fdde03\"},\"0x18f0f7e\"]} https://ethereum-rpc.publicnode.com\ncurl: (22) The requested URL returned error: 403\n"
+    },
+    {
+      "endpoint": "https://eth.drpc.org",
+      "status": "read succeeded",
+      "historyComplete": false
+    }
+  ],
+  "snapshot": {
+    "schema": "embeo-readonly-fees/1",
+    "observedUtc": "2026-10-09T17:59:16.853Z",
+    "chainId": 1,
+    "blockNumber": 26152830,
+    "blockHash": "0xe6752c5a8010820c7e3283c9024ad4308232a37d03e2015d4559ae3f6b70cc4f",
+    "blockUtc": "2026-10-09T05:42:47.000Z",
+    "token": {
+      "address": "0x2b82cdeb8477415d541799abb0cc48044c8ea5f3",
+      "decimals": 18,
+      "supplyAtomic": "1000000000000000000000000000"
+    },
+    "poolId": "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a",
+    "poolFeeUnits": 12500,
+    "requester": "0x1c651928150daddda9c2c040a9d4901d862f8ec4",
+    "requesterBps": 8000,
+    "assets": {
+      "ETH": {
+        "owedAtomic": "0",
+        "poolUncollectedAtomic": "2300937499999999",
+        "estimatedRequesterAtomic": "1840749999999999",
+        "paidEventAtomic": null,
+        "poolCollectedAtomic": null
+      },
+      "EMBEO": {
+        "owedAtomic": "0",
+        "poolUncollectedAtomic": "0",
+        "estimatedRequesterAtomic": "0",
+        "paidEventAtomic": null,
+        "poolCollectedAtomic": null
+      }
+    },
+    "simulation": {
+      "complete": true,
+      "error": null,
+      "method": "eth_call only; no broadcast; temporary simulated payouts are discarded"
+    },
+    "history": {
+      "complete": false,
+      "from": 26143156,
+      "to": 26152830,
+      "chunks": 0,
+      "error": "Error: Command failed: curl --silent --show-error --fail --max-time 15 --max-filesize 4194304 -H content-type: application/json --data {\"jsonrpc\":\"2.0\",\"id\":15,\"method\":\"eth_getLogs\",\"params\":[{\"address\":\"0xff03410d0fe5fa8f7f59f743de35e333d9857120\",\"fromBlock\":\"0x18ee9b4\",\"toBlock\":\"0x18ef183\",\"topics\":[\"0x92bb3dfe17df5319974aaca1e77895145ae67327ab5b3c58d40227a1d3966939\",\"0x00000000000000000000000000000000000000000000000000000000000003b0\"]}]} https://eth.drpc.org\ncurl: (22) The requested URL returned error: 400\n",
+      "paidScope": "Factory FeesPaid events for this wallet/currencies within the interval; may include other launches",
+      "claimed": [],
+      "paid": []
+    },
+    "owedErrors": [
+      null,
+      null
+    ],
+    "membershipEnabled": false,
+    "financialActionPerformed": false
+  },
+  "endpoint": "https://eth.drpc.org",
+  "financialActions": false,
+  "independentReview": "pending",
+  "runtime": {
+    "token": {
+      "sha256": "34c88e2345fc1b93f60ace20e3933e251f0bff4149e279544ba3a6a72459062f",
+      "bytes": 1722,
+      "matchesLocalArtifact": true
+    },
+    "factory": {
+      "sha256": "c0704d5d18e592c1332f6e77c61012218538ea0a31cb167956d94149df5d9a72",
+      "bytes": 23345
+    }
+  },
+  "derivedPoolId": "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a",
+  "poolIdMatches": true,
+  "referenceAssetsMatch": false
+}

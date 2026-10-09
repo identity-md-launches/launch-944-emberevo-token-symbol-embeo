@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-09T18:08:23.763Z",
+  "cases": [
+    {
+      "name": "healthy public read preserves separate assets and floor rounding",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong chain stops fee display",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong token in actual pool stops display",
+      "status": "PASS"
+    },
+    {
+      "name": "manifest 3000 cannot masquerade as effective fee",
+      "status": "PASS"
+    },
+    {
+      "name": "failed history stays unknown, never zero",
+      "status": "PASS"
+    },
+    {
+      "name": "failed simulation preserves owed while unknown amounts stay null",
+      "status": "PASS"
+    },
+    {
+      "name": "reject eth_sendTransaction",
+      "status": "PASS"
+    },
+    {
+      "name": "reject eth_sendRawTransaction",
+      "status": "PASS"
+    },
+    {
+      "name": "reject personal_sign",
+      "status": "PASS"
+    },
+    {
+      "name": "reject eth_signTypedData_v4",
+      "status": "PASS"
+    },
+    {
+      "name": "reject wallet_switchEthereumChain",
+      "status": "PASS"
+    },
+    {
+      "name": "unapproved RPC is refused before any HTTP request",
+      "status": "PASS"
+    },
+    {
+      "name": "claim and withdraw cannot be executed by transport",
+      "status": "PASS"
+    },
+    {
+      "name": "scope mutation invalidates cached snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong cached pool invalidates saved data",
+      "status": "PASS"
+    },
+    {
+      "name": "partial data incorrectly filled with zero is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "atomic amounts never pass through floating point",
+      "status": "PASS"
+    },
+    {
+      "name": "out-of-range event query is rejected before transport",
+      "status": "PASS"
+    },
+    {
+      "name": "successful receipt fixture yields separate collected and paid totals",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate events cannot inflate history",
+      "status": "PASS"
+    },
+    {
+      "name": "failed transaction receipt cannot become paid income",
+      "status": "PASS"
+    },
+    {
+      "name": "successful receipt missing the reported events cannot become paid income",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong live fee beneficiary stops display",
+      "status": "PASS"
+    },
+    {
+      "name": "saved live snapshot follows the same validation contract",
+      "status": "PASS"
+    },
+    {
+      "name": "page uses approved logo and token, with no wallet or inline script",
+      "status": "PASS"
+    }
+  ],
+  "total": 25,
+  "failures": 0,
+  "scope": "Behavioral positive and task-shaped negative controls; not a blockchain security audit."
+}

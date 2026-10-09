@@ -1,0 +1,109 @@
+{
+  "schema": "embeo-readonly-fees/1",
+  "observedUtc": "2026-10-09T05:56:14.524Z",
+  "chainId": 1,
+  "blockNumber": 26152830,
+  "blockHash": "0xe6752c5a8010820c7e3283c9024ad4308232a37d03e2015d4559ae3f6b70cc4f",
+  "blockUtc": "2026-10-09T05:42:47.000Z",
+  "token": {
+    "address": "0x2b82cdeb8477415d541799abb0cc48044c8ea5f3",
+    "decimals": 18,
+    "supplyAtomic": "1000000000000000000000000000"
+  },
+  "poolId": "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a",
+  "poolFeeUnits": 12500,
+  "requester": "0x1c651928150daddda9c2c040a9d4901d862f8ec4",
+  "requesterBps": 8000,
+  "assets": {
+    "ETH": {
+      "owedAtomic": "0",
+      "poolUncollectedAtomic": "2300937499999999",
+      "estimatedRequesterAtomic": "1840749999999999",
+      "paidEventAtomic": "40241801935047402",
+      "poolCollectedAtomic": "50302252418809253"
+    },
+    "EMBEO": {
+      "owedAtomic": "0",
+      "poolUncollectedAtomic": "0",
+      "estimatedRequesterAtomic": "0",
+      "paidEventAtomic": "850448753733723892289645",
+      "poolCollectedAtomic": "1063060942167154865362057"
+    }
+  },
+  "simulation": {
+    "complete": true,
+    "error": null,
+    "method": "eth_call only; no broadcast; temporary simulated payouts are discarded"
+  },
+  "history": {
+    "complete": true,
+    "from": 26143156,
+    "to": 26152830,
+    "chunks": 5,
+    "error": null,
+    "paidScope": "Factory FeesPaid events for this wallet/currencies within the interval; may include other launches",
+    "claimed": [
+      {
+        "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+        "topics": [
+          "0x92bb3dfe17df5319974aaca1e77895145ae67327ab5b3c58d40227a1d3966939",
+          "0x00000000000000000000000000000000000000000000000000000000000003b0",
+          "0x000000000000000000000000a4ad5765f70cb2349bf674271c0fbeb9f4375717"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000b2b5a1ced33da500000000000000000000000000000000000000000000e11ca62ea2c3be9a5489",
+        "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+        "blockNumber": "0x18f0ef4",
+        "blockTimestamp": "0x6ac87847",
+        "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+        "transactionIndex": "0x28",
+        "logIndex": "0x1f5",
+        "removed": false
+      }
+    ],
+    "paid": [
+      {
+        "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+        "topics": [
+          "0x212133fc9a2f9e7b8a0f823506161dee64a13efd4cd79271db78553883268ab5",
+          "0x0000000000000000000000001c651928150daddda9c2c040a9d4901d862f8ec4",
+          "0x0000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000008ef7b4a575caea",
+        "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+        "blockNumber": "0x18f0ef4",
+        "blockTimestamp": "0x6ac87847",
+        "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+        "transactionIndex": "0x28",
+        "logIndex": "0x1f6",
+        "removed": false
+      },
+      {
+        "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+        "topics": [
+          "0x212133fc9a2f9e7b8a0f823506161dee64a13efd4cd79271db78553883268ab5",
+          "0x0000000000000000000000001c651928150daddda9c2c040a9d4901d862f8ec4",
+          "0x0000000000000000000000002b82cdeb8477415d541799abb0cc48044c8ea5f3"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000b416eb5882363215106d",
+        "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+        "blockNumber": "0x18f0ef4",
+        "blockTimestamp": "0x6ac87847",
+        "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+        "transactionIndex": "0x28",
+        "logIndex": "0x1f8",
+        "removed": false
+      }
+    ]
+  },
+  "membershipEnabled": false,
+  "financialActionPerformed": false,
+  "provenance": {
+    "primary": "https://ethereum-rpc.publicnode.com",
+    "secondary": "https://rpc.mevblocker.io/fast",
+    "sameBlockCriticalReadsMatch": true,
+    "factoryRuntimeKeccak256": "0x8ebd1e14bfe42bfe52e52f21492455fb65f642497e93e82ab285dfec3d4cd4d8",
+    "tokenRuntimeKeccak256": "0x01fb92b21a7414fcac4480618142f8968a5d2bae8071370fb5e9369b97fc55bc",
+    "factorySourceStatus": "Blockscout partially verified source; runtime bytes match; independent full factory recompilation NOT_RUN",
+    "sourceProvider": "https://eth.blockscout.com/api/v2/smart-contracts/0xff03410d0fe5fa8f7f59f743de35e333d9857120"
+  }
+}

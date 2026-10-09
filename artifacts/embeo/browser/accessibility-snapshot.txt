@@ -1,0 +1,129 @@
+- link "前往費用查詢":
+  - /url: "#fees"
+- banner:
+  - link "IMD Ember World":
+    - /url: https://imdember.com/
+  - text: 獨立社群專案
+- main:
+  - region "EmberEVO EMBEO":
+    - img "EmberEVO 橘色火焰標誌"
+    - heading "EmberEVO EMBEO" [level=1]
+    - paragraph: 代幣資訊與費用查詢
+    - paragraph: 核對正式合約、查看部署紀錄，並查詢交易費用的分配狀態。
+  - region "正式代幣":
+    - heading "正式代幣" [level=2]
+    - paragraph: Ethereum 主網 · 原生 ETH 配對
+    - code: "0x2b82cdeb8477415d541799abb0cc48044c8ea5f3"
+    - button "複製地址"
+    - status: 地址已選取，可按 Ctrl+C 複製；手機可長按地址。
+    - term: 名稱 / 符號
+    - definition: EmberEVO / EMBEO
+    - term: 初始供應量
+    - definition: 1,000,000,000 枚
+    - term: 精度 / 網路
+    - definition: 18 / Ethereum（chain ID 1）
+    - term: 初始配置
+    - definition: 86% 池子、10% Swarm、4% 發幣錢包
+  - navigation "正式代幣來源":
+    - link "Etherscan 已驗證原始碼":
+      - /url: https://etherscan.io/address/0x2b82cdeb8477415d541799abb0cc48044c8ea5f3#code
+    - link "IMD 代幣資料":
+      - /url: https://explorer.imd.fun/token/0x2b82cdeb8477415d541799abb0cc48044c8ea5f3
+    - link "EMBEO / ETH 池子":
+      - /url: https://www.geckoterminal.com/eth/pools/0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a
+  - region "請勿購買歷史測試 EMVO · DO NOT BUY":
+    - heading "請勿購買歷史測試 EMVO · DO NOT BUY" [level=2]
+    - paragraph: 舊 EmberEvo（EMVO）是 Ethereum 主網（MAINNET）上的歷史測試發行，與正式 EMBEO 不同，不適用正式會員資格。舊合約與池子仍存在；沒有自動換幣、遷移或補償承諾。舊 Swarm 權利維持分開，並未取消。
+    - code: "0x7A427b94547232356cF212Fd1C668e8EB4069a46"
+  - region "交易費用":
+    - heading "交易費用" [level=2]
+    - paragraph:
+      - text: 實際池費率
+      - strong: 1.25%
+      - text: 。官方分配比例為專案 80%、網路 20%。
+    - button "更新鏈上資料"
+    - paragraph: 此表查詢指定發幣錢包的交易費用，只讀資料，無須連接錢包。查詢不會領取費用或執行交易。畫面金額最多顯示 8 位小數，完整數值見原始資料。
+    - status: 顯示保存的核對快照，尚未在此頁更新。 核對時間：2026/10/9 05:56:14
+    - region "交易費用表格，可橫向捲動":
+      - table "ETH 與 EMBEO 分開記帳，欄位間不相加。":
+        - caption: ETH 與 EMBEO 分開記帳，欄位間不相加。
+        - rowgroup:
+          - row "資產 本池預估專案份額 合約內待補付 Factory 已付款紀錄":
+            - columnheader "資產"
+            - columnheader "本池預估專案份額"
+            - columnheader "合約內待補付"
+            - columnheader "Factory 已付款紀錄"
+        - rowgroup:
+          - row "ETH 0.00184074 0 0.0402418":
+            - rowheader "ETH"
+            - cell "0.00184074"
+            - cell "0"
+            - cell "0.0402418"
+          - row "EMBEO 0 0 850,448.75373372":
+            - rowheader "EMBEO"
+            - cell "0"
+            - cell "0"
+            - cell "850,448.75373372"
+    - paragraph:
+      - strong: 本池預估專案份額
+      - text: 以尚未收集的池費用乘上專案份額，取最小單位整數。來自唯讀模擬，金額會隨交易變動，尚未入帳。
+    - paragraph:
+      - strong: 合約內待補付
+      - text: 之前分配時未能成功付款、仍欠這個錢包的金額。這是 Factory 的錢包／幣種共用記帳，可能包含其他發行。
+    - paragraph:
+      - strong: Factory 已付款紀錄
+      - text: 完整掃描期間內，Factory 對這個錢包與幣種的成功付款事件。這是錢包／幣種共用紀錄，可能包含其他發行；不是本池專屬收入或錢包全部收入。
+    - paragraph:
+      - text: 核對收款錢包：
+      - code: "0x1C651928150DADDDA9C2C040a9D4901d862f8eC4"
+    - paragraph: 付款事件已核對：區塊 26143156 至 26152830。同 Factory、同錢包／幣種的共用紀錄。
+    - group:
+      - text: 查詢時間與原始資料
+      - term: 資料區塊
+      - definition: 26152830（已最終確認）
+      - term: 區塊 UTC 時間
+      - definition: 2026-10-09T05:42:47.000Z
+      - term: 區塊雜湊
+      - definition:
+        - code: "0xe6752c5a8010820c7e3283c9024ad4308232a37d03e2015d4559ae3f6b70cc4f"
+      - term: 讀取來源
+      - definition: https://ethereum-rpc.publicnode.com
+      - button "下載目前顯示的 JSON"
+      - link "開啟原始保存快照":
+        - /url: data/latest.json
+      - paragraph: 未收集費用來自 eth_call 模擬，未執行鏈上領取；估算已按最小單位取整。
+      - paragraph: 待補付金額已在同一資料區塊讀取；此欄按 Factory、錢包與幣種共用。
+      - paragraph: 完整金額（18 位精度的最小單位整數；null 表示未確認）：
+      - region "完整金額最小單位": "{ \"ETH\": { \"owedAtomic\": \"0\", \"poolUncollectedAtomic\": \"2300937499999999\", \"estimatedRequesterAtomic\": \"1840749999999999\", \"paidEventAtomic\": \"40241801935047402\", \"poolCollectedAtomic\": \"50302252418809253\" }, \"EMBEO\": { \"owedAtomic\": \"0\", \"poolUncollectedAtomic\": \"0\", \"estimatedRequesterAtomic\": \"0\", \"paidEventAtomic\": \"850448753733723892289645\", \"poolCollectedAtomic\": \"1063060942167154865362057\" } }"
+  - region "部署與聯絡資料":
+    - heading "部署與聯絡資料" [level=2]
+    - term: 部署
+    - definition:
+      - link "Ethereum 部署交易":
+        - /url: https://etherscan.io/tx/0xd926c03bafe9e92252b37f44a0ea7bf1116f5c8a8cefb2aee7a3d28363d6aa09
+      - text: "· IMD Launch #944"
+    - term: PoolId
+    - definition:
+      - code: "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a"
+    - term: Factory
+    - definition:
+      - code: "0xff03410d0fe5fa8f7f59f743de35e333d9857120"
+    - term: 初始化 Guard
+    - definition:
+      - code: "0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000"
+    - term: 池子配置
+    - definition: 原生 ETH / EMBEO · fee 12500 · tickSpacing 60。歷史 admission manifest 的 3000 不是實際池費率。
+    - term: 交付原始碼
+    - definition:
+      - link "查看發行時固定版本":
+        - /url: https://github.com/identity-md-launches/launch-944-emberevo-token-symbol-embeo/tree/cecf25b92d44568f8a0f81c34f4b634df905d1e5
+    - term: 官網
+    - definition:
+      - link "imdember.com":
+        - /url: https://imdember.com/
+    - term: 官方 X
+    - definition:
+      - link "@tungweb3":
+        - /url: https://x.com/tungweb3
+    - paragraph: 原始碼驗證表示程式碼比對通過，不是安全認證。平台 Logo 與 Token Info 登記各自處理；本頁不代表申請已核准。
+- contentinfo: EmberEVO 是獨立社群專案，並非 Identity.md 官方代幣或背書。 此輕量只讀頁面與 imdember.com 的 3D 世界分開；獨立審閱待完成。未啟用會員或 Genesis。

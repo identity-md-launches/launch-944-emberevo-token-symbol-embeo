@@ -1,0 +1,202 @@
+{
+  "at": "2026-10-09T18:11:40.274546+00:00",
+  "status": "PASS",
+  "changedExistingFiles": [
+    "README.md"
+  ],
+  "protectedFilesUnchanged": [
+    {
+      "path": "foundry.toml",
+      "sha256": "3721643f777a1e08eac691d96f484ba57fd4735f116835a551e9ff3e2af86371"
+    },
+    {
+      "path": "launch.json",
+      "sha256": "6ee6d55b872aaa198a1d294a1ba299b9456304d330652720fb890059b6dbe44f"
+    },
+    {
+      "path": "launch/request.json",
+      "sha256": "c3ce126785f751bff5940e42de190c6c63ae522f6625aaedca1fa5c15f7f0b46"
+    },
+    {
+      "path": "lib/forge-std/LICENSE-APACHE",
+      "sha256": "50b6bf8bdb63265ce14953b480b7aaa0271e78f56843b99c184abd3ae5048cd7"
+    },
+    {
+      "path": "lib/forge-std/LICENSE-MIT",
+      "sha256": "6d185dfe089d4de346d391fc5997fbd4739bad1d6556010413c10f420d704ecc"
+    },
+    {
+      "path": "lib/forge-std/src/Base.sol",
+      "sha256": "29297a56d2b1692d4439545b93ed62890da7e9e1060c03005b43151af7984bf0"
+    },
+    {
+      "path": "lib/forge-std/src/Script.sol",
+      "sha256": "69481d9a1b816761680fe82700233d0ecbb85f81f4e2826841664779cbb6f535"
+    },
+    {
+      "path": "lib/forge-std/src/StdAssertions.sol",
+      "sha256": "3fbf4a025b4fc94eaca4c38c1f3dacb37bee10f12ee81994cfaf365ac1ce7384"
+    },
+    {
+      "path": "lib/forge-std/src/StdChains.sol",
+      "sha256": "09a88ace5bc037f4a805c7ae071abf675ce802c8b36810287cd327b7d035fb81"
+    },
+    {
+      "path": "lib/forge-std/src/StdCheats.sol",
+      "sha256": "29af42f9d670fd22e9fc3ebe3c2da194471e93e210361c41d3d26ef04e9dca28"
+    },
+    {
+      "path": "lib/forge-std/src/StdConstants.sol",
+      "sha256": "6c785abd2fb9d42560f867d8e43e729c55f5bda2c06e5ddae27b17e301de4f04"
+    },
+    {
+      "path": "lib/forge-std/src/StdError.sol",
+      "sha256": "82ca17e33a03775e95b4612bd604a8732c73b2982a0278d214e06c68a886dc11"
+    },
+    {
+      "path": "lib/forge-std/src/StdInvariant.sol",
+      "sha256": "f572e991cfe874844b3b75a540e38e2161c29b5d9ab1635a3c4f1a16c548f987"
+    },
+    {
+      "path": "lib/forge-std/src/StdJson.sol",
+      "sha256": "61bbf9b3219f3636d459e74799e642ee80a9e4d51ef66e793814a032ed97cb83"
+    },
+    {
+      "path": "lib/forge-std/src/StdMath.sol",
+      "sha256": "f04fc0616741563eb32d66c11af7fdca55a7202221e14282268c7be851fc63ab"
+    },
+    {
+      "path": "lib/forge-std/src/StdStorage.sol",
+      "sha256": "c6dbb05b29be5bcbfabf06ea46b64fe9fbdb7542681795614ca3dee248214215"
+    },
+    {
+      "path": "lib/forge-std/src/StdStyle.sol",
+      "sha256": "324c2b0e100e88edbdb75f60f8a4c42f056f8d618ae5f56b1c404df64e8280a7"
+    },
+    {
+      "path": "lib/forge-std/src/StdToml.sol",
+      "sha256": "187d2f0cc66b5ebac7da23dd9d68980149a8331bb2f1060128ce2e5091d66518"
+    },
+    {
+      "path": "lib/forge-std/src/StdUtils.sol",
+      "sha256": "c64a4d5023e6d46884734b8cb1b0f424bab26f0ccc920779b58d2f841c4506ae"
+    },
+    {
+      "path": "lib/forge-std/src/Test.sol",
+      "sha256": "b1b48a4dfbd65fed186163326dc8870316679f64a195aa18050f83657d2df39c"
+    },
+    {
+      "path": "lib/forge-std/src/Vm.sol",
+      "sha256": "a1b1c82924aecf0f38b53192fd1e801cccc1e1fd2ecd6b2301e4f4c4ab102a15"
+    },
+    {
+      "path": "lib/forge-std/src/console.sol",
+      "sha256": "a2e632dcbc787bb096e2c06bad26c6e5e09bafca18466b236b1f2687c2ad79e9"
+    },
+    {
+      "path": "lib/forge-std/src/console2.sol",
+      "sha256": "3bbe2e07ec53d8cf9c091667fe10234fcb3e2b45eab2c711002188806f46e779"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC1155.sol",
+      "sha256": "d44fde880db31958113ed5b490ed30766f7843137947893506e35b161b959000"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC165.sol",
+      "sha256": "9bdab733bba2df028853aef1f5e06871fb4157d15c3c6a670be13f9b614c193b"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC20.sol",
+      "sha256": "283cedb0cf82640370b77b8a42175bc417c69a02d8989ac6d6a99be2157acd4d"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC4626.sol",
+      "sha256": "6a5115bfcaba28ad7f11d1e3973718683f5bac596f0e567d0a1cd4d3308e98b7"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC6909.sol",
+      "sha256": "b42d2ff602839f784bbf1012e124c01e11784b5b08bc828fbc6b151d2477f517"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC721.sol",
+      "sha256": "f6383f58bcf3a0f34717ae4ed5866b78201fd646df2e5eb2b7234d2ea2466ae5"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7540.sol",
+      "sha256": "3ae3eec94e3e61300cc2c41cee8aadbd12cf0c040a411387a89e92796aee8bf8"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IERC7575.sol",
+      "sha256": "31c45af17a667da7fe1710097cdc1edb6dbae0665f12a361b8632a4be0ead219"
+    },
+    {
+      "path": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "sha256": "1b63ca78b27d9893596a9e3667b4dbc32506100cd99a96e8dfff0ac96068053b"
+    },
+    {
+      "path": "lib/forge-std/src/safeconsole.sol",
+      "sha256": "ed11aa2efc83fa8e575215a11dd7a9be385cf49dacbc379630168d7334899e46"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/LICENSE",
+      "sha256": "0e05b4f45c8769ece14ba2d202bf6f5ed7132600b642c981266f7255e0187ea3"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+      "sha256": "4aea87243e6de38804bf8737bf86f750443d3b5e63dd0fd0b7ad92f77cdbd3e3"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+      "sha256": "2d874da1c1478ed22a2d30dcf1a6ec0d09a13f897ca680d55fb49fbcc0e0c5b1"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "sha256": "6f2faae462e286e24e091d7718575179644dc60e79936ef0c92e2d1ab3ca3cee"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "sha256": "1d079c20a192a135308e99fa5515c27acfbb071e6cdb0913b13634e630865939"
+    },
+    {
+      "path": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6"
+    },
+    {
+      "path": "remappings.txt",
+      "sha256": "79f11452d3ebfaa9c9c1cf7afa0dce42dda3bced35f7047ea30e850a1a61cfb1"
+    },
+    {
+      "path": "src/LaunchToken.sol",
+      "sha256": "ef5f1a475907ca50e7f56a7ecb53076e489425fba8441c87170c41da692a6bc4"
+    },
+    {
+      "path": "test/LaunchToken.adversarial.t.sol",
+      "sha256": "3e10fa5f83ac10010443706a0290150156617d66b2fb0ebe23580e030d3587d5"
+    },
+    {
+      "path": "test/LaunchToken.invariant.t.sol",
+      "sha256": "8eb278d25627843a6173c163869685bd28c240f598ec1710ebed7d6a9340e8d4"
+    },
+    {
+      "path": "test/LaunchToken.t.sol",
+      "sha256": "55ca3dbc91298697b5138962343f8428acbed0b7419454afdf524c33a7b35bd8"
+    },
+    {
+      "path": "test/README.md",
+      "sha256": "a2c2e032128c1db450e671d77754215c723516ae05fbccbd800bc27026743a77"
+    }
+  ],
+  "publicExportFiles": 7,
+  "publicExportBytes": 45446,
+  "submissionFileCountBeforeThisReport": 145,
+  "uncompressedPayloadBytesBeforeThisReport": 2626543,
+  "maximumBundleBytes": 8388608,
+  "budgetMethod": "Conservative uncompressed sum of all tracked and nonignored candidate files, excluding supplied .imd inputs and disposable test/scratch. Final Git bundle is assembled by the network; .git was not modified.",
+  "noGeneratedDependenciesCachesArchivesOr3D": true,
+  "noNewContactEmail": true,
+  "publicExportMatchesSource": true,
+  "independentReview": "pending",
+  "ipfsPublication": "pending official continuation; no receipt or CID supplied",
+  "finalCandidateFileCount": 146,
+  "finalUncompressedPayloadBytes": 2634202
+}

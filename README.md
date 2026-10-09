@@ -1,5 +1,61 @@
 # EmberEVO (EMBEO)
 
+## Current status — Ethereum mainnet, launch 944
+
+**EmberEVO / EMBEO is deployed at `0x2b82cdeb8477415d541799abb0cc48044c8ea5f3`, Ethereum MAINNET (chain ID 1).** It has 18 decimals and an initial supply of 1,000,000,000 EMBEO. This Website continuation does not redeploy, replace, re-mint or change the token.
+
+> **DO NOT BUY historical test EMVO:** `0x7A427b94547232356cF212Fd1C668e8EB4069a46` is an Ethereum MAINNET historical test issuance, not formal EMBEO or formal EMBEO membership. The old contracts and pool still exist. There is no automatic exchange, migration or compensation; separate old Swarm rights remain unchanged.
+
+The live native ETH/EMBEO pool has fee **12500 (1.25%)**, tick spacing **60**, and PoolId `0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a`. Its initialization guard is `0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000`. The original `launch.json` admission fee `3000` is historical format, not the effective fee; that manifest is preserved unchanged.
+
+Factory: `0xff03410d0fe5fa8f7f59f743de35e333d9857120`. Requester/recorded fee beneficiary: `0x1c651928150daddda9c2c040a9d4901d862f8ec4`. [Deployment transaction](https://etherscan.io/tx/0xd926c03bafe9e92252b37f44a0ea7bf1116f5c8a8cefb2aee7a3d28363d6aa09), block 26143156. [Current deployment record](docs/embeo/POSTDEPLOY.md) has the full handoff and evidence limits.
+
+## Lightweight read-only page
+
+Source is in `web/embeo/`; the complete static export is `dist/`. The approved Traditional Chinese HTML/CSS/modules, exact owner flame and tests were acquired from the fixed public reference subtree and digest-checked before reuse. Exact originals are retained under `docs/embeo/reference/`; [provenance and adaptations](docs/embeo/REFERENCE.md) distinguish originals from the final implementation.
+
+The page copies the token address, discloses evidence, downloads the currently displayed snapshot, and refreshes fixed public RPC reads at a finalized block. It checks token identity, pool, effective fee, fee-contract pointer and beneficiary. `claimFees(944)` is simulated through `eth_call` only. ETH and EMBEO stay separate, with integer 80/20 calculations and floor rounding. Owed and FeesPaid are Factory/account/currency scoped and can span launches. Bounded scans require successful matching receipts; missing data remains null/unknown. The original saved snapshot is dated, not presented as live. See [fee semantics and reproducible commands](docs/embeo/FEES.md).
+
+There is no wallet connection, signature, payment, approval, swap, fee claim, withdrawal or deployment interaction. This task creates no membership, Genesis, vesting, burn, treasury or schedule. **Independent review is pending.** Worker checks do not establish security certification or metadata registration approval.
+
+### Install, typecheck, test, rebuild and preview
+
+Node 22+ is required. The page has no runtime npm dependencies. Development tools are pinned in `web/embeo/package-lock.json`.
+
+```sh
+cd web/embeo
+npm ci
+npm run typecheck
+npm test
+npm run build
+npm run preview
+```
+
+Open `http://127.0.0.1:4173/preview/`. The preview serves only the approved export, at a subpath matching static gateway behavior. Stop it with Ctrl+C. `npm run build` uses native Node modules and needs no network; `npm ci --offline` works once the lockfile packages are cached. No npm registry mirror or dependency archive is needed in the repository.
+
+For browser validation:
+
+```sh
+npx playwright install chromium --only-shell
+npm run test:browser
+```
+
+The test owns its temporary loopback server/browser and closes both when finished. It checks responsive layouts, keyboard controls, clipboard fallback, current-data downloads, loading, partial failure, stale data, missing snapshot, static assets, contrast and accessibility. Live network reads are an optional separate `node scripts/check-live.mjs` command requiring `curl` and `cast`; offline tests do not depend on a chain endpoint.
+
+The worker's actual run passed the production build, `tsc --noEmit` over the browser JavaScript, 25 adapted reference checks and 26 additional reader tests. Browser checks inspected the production export at 1440, 768, 390 and 320 CSS pixels. The original block-26152830 snapshot was replayed with matching integer amounts, complete bounded history and successful receipts. [Validation](artifacts/validation.md) records the final results, commands, six-domain Better Interface coverage, fixes, screenshots and remaining limitations; [DESIGN.md](DESIGN.md) documents the final implementation.
+
+### Publish through the official Website continuation
+
+The approved public payload is **only `dist/`**: seven allowlisted files with relative assets. [Publication handoff](docs/embeo/PUBLISH.md) and [export digests](artifacts/embeo/public-export.json) define that boundary. The official Website continuation can publish this export to a new IPFS page. A publishing tool/receipt was not supplied locally, so **IPFS publication and its CID are not claimed**. If the publisher cannot restrict hosting to this export, stop and report the conflict.
+
+Do not upload the repository, source archive, documentation, screenshots, test evidence or 3D assets as website content. Do not deploy to, overwrite, redirect or alter [imdember.com](https://imdember.com/) or its existing 3D world. Public contact routes are the [website](https://imdember.com/) and [X](https://x.com/tungweb3).
+
+## Preserved pre-deployment history
+
+The following original project record describes the earlier source-delivery stage. Its statements that deployment or a new address were pending are **historical**, superseded by the current status above. Original contract source, manifest, request, tests and prior validation bytes remain unchanged. The historical personal contact route has been removed from this updated README.
+
+---
+
 ![Owner's exact orange flame](assets/emvo-64.771f691c33.png)
 
 **Formal new EMBEO address: pending official Ethereum mainnet deployment. No new address or deployment transaction is claimed by this repository.**
@@ -49,6 +105,6 @@ python3 scripts/export_artifacts.py --check
 - [Compiled ABI](artifacts/LaunchToken.abi.json), [reproducibility record](artifacts/build.json), [deployment status](artifacts/deployment-status.json)
 - [Dependency provenance](DEPENDENCIES.md)
 
-Public information: [website](https://imdember.com/) · [X](https://x.com/tungweb3) · [tungweb3@gmail.com](mailto:tungweb3@gmail.com).
+Public information: [website](https://imdember.com/) · [X](https://x.com/tungweb3).
 
 The [public 64×64 transparent PNG](https://imdember.com/assets/emvo-64.771f691c33.png) is included byte-for-byte, without redrawing or recoloring. SHA-256: `771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4`. Its historical filename carries the shared brand image, not the old token's identity. No unsupported API logo fields were added. **Etherscan, CoinGecko, Uniswap and wallet-logo registrations remain separate pending steps.** A README image does not complete those registrations. Check/review is not safety certification; ETH pairing and this logo guarantee neither swap availability nor removal of wallet risk alerts.

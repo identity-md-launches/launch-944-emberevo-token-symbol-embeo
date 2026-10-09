@@ -1,0 +1,271 @@
+{
+  "at": "2026-10-09T18:07:54.219Z",
+  "browser": "141.0.7390.37",
+  "checks": [
+    {
+      "name": "production export loads at a gateway-style subpath with the saved reference amounts",
+      "status": "PASS"
+    },
+    {
+      "name": "initial page makes no external request, wallet request or automatic refresh",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop, intermediate and mobile layouts reflow without page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "fee table scrolls with keyboard at 320px",
+      "status": "PASS"
+    },
+    {
+      "name": "skip link and sequential focus reach the primary refresh control",
+      "status": "PASS"
+    },
+    {
+      "name": "copy address works with keyboard and writes the exact formal token address",
+      "status": "PASS"
+    },
+    {
+      "name": "clipboard denial leaves a selectable full-address fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "native disclosure opens with Space and exposes exact atomic values",
+      "status": "PASS"
+    },
+    {
+      "name": "snapshot download matches displayed saved block and integer amounts",
+      "status": "PASS"
+    },
+    {
+      "name": "measured rendered text/background pairs meet 4.5:1",
+      "status": "PASS"
+    },
+    {
+      "name": "automated accessibility scan of expanded production page",
+      "status": "PASS"
+    },
+    {
+      "name": "forced-colors focus remains visible; reduced motion has no animations to run",
+      "status": "PASS"
+    },
+    {
+      "name": "text spacing stress does not create page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "CSS 200% enlargement reflows without page overflow (not native zoom)",
+      "status": "PASS"
+    },
+    {
+      "name": "RTL structural mirror remains contained; translations are out of scope",
+      "status": "PASS"
+    },
+    {
+      "name": "refresh loading, success and floor-rounded separate-asset display with deterministic RPC fixture",
+      "status": "PASS"
+    },
+    {
+      "name": "download after refresh contains the newly displayed values, not the original saved file",
+      "status": "PASS"
+    },
+    {
+      "name": "a complete secondary snapshot replaces a partial primary without combining providers",
+      "status": "PASS"
+    },
+    {
+      "name": "partial failures render unknown without wiping a separately successful asset read",
+      "status": "PASS"
+    },
+    {
+      "name": "failed refresh preserves last displayed data and explicitly labels it stale",
+      "status": "PASS"
+    },
+    {
+      "name": "all browser RPC requests use the fixed public read-only allowlist",
+      "status": "PASS"
+    },
+    {
+      "name": "missing saved snapshot starts unknown and disables an unavailable download",
+      "status": "PASS"
+    },
+    {
+      "name": "static token identity and saved-data link remain usable without JavaScript",
+      "status": "PASS"
+    },
+    {
+      "name": "no uncaught JavaScript errors or failed production static resources",
+      "status": "PASS"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "overflow": false
+    }
+  ],
+  "contrast": [
+    {
+      "selector": "body",
+      "foreground": "rgb(32, 48, 60)",
+      "background": [
+        244,
+        247,
+        249
+      ],
+      "ratio": 12.597307352605924,
+      "fontSize": "16px"
+    },
+    {
+      "selector": ".intro h1",
+      "foreground": "rgb(32, 48, 60)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 13.553239489642086,
+      "fontSize": "44px"
+    },
+    {
+      "selector": ".identity p",
+      "foreground": "rgb(89, 105, 117)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.672195122226093,
+      "fontSize": "14px"
+    },
+    {
+      "selector": ".source-links a",
+      "foreground": "rgb(36, 88, 114)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 7.737987276419289,
+      "fontSize": "14px"
+    },
+    {
+      "selector": ".test-notice h2",
+      "foreground": "rgb(154, 44, 16)",
+      "background": [
+        255,
+        244,
+        238
+      ],
+      "ratio": 7.085552217426277,
+      "fontSize": "18px"
+    },
+    {
+      "selector": ".test-notice p",
+      "foreground": "rgb(32, 48, 60)",
+      "background": [
+        255,
+        244,
+        238
+      ],
+      "ratio": 12.537961649815594,
+      "fontSize": "14px"
+    },
+    {
+      "selector": "#refresh",
+      "foreground": "rgb(255, 255, 255)",
+      "background": [
+        189,
+        54,
+        18
+      ],
+      "ratio": 5.675423211840614,
+      "fontSize": "16px"
+    },
+    {
+      "selector": "#read-status",
+      "foreground": "rgb(32, 48, 60)",
+      "background": [
+        237,
+        243,
+        246
+      ],
+      "ratio": 12.10233681244057,
+      "fontSize": "14px"
+    },
+    {
+      "selector": ".quiet",
+      "foreground": "rgb(89, 105, 117)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.672195122226093,
+      "fontSize": "14px"
+    },
+    {
+      "selector": "thead th",
+      "foreground": "rgb(89, 105, 117)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 5.672195122226093,
+      "fontSize": "13px"
+    },
+    {
+      "selector": "td",
+      "foreground": "rgb(32, 48, 60)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 13.553239489642086,
+      "fontSize": "20px"
+    },
+    {
+      "selector": "footer",
+      "foreground": "rgb(89, 105, 117)",
+      "background": [
+        244,
+        247,
+        249
+      ],
+      "ratio": 5.272125927771175,
+      "fontSize": "12px"
+    }
+  ],
+  "consoleErrors": [],
+  "failedResources": [],
+  "limitations": [
+    "No physical mobile device or screen-reader session.",
+    "Text enlargement and viewport reflow are not native browser 200% zoom.",
+    "Deterministic refresh states use labelled RPC fixtures, not live earnings evidence."
+  ],
+  "axe": {
+    "violations": [],
+    "passes": 27,
+    "incomplete": []
+  },
+  "status": "PASS"
+}

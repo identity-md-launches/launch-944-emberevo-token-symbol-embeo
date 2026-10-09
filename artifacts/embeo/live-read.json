@@ -1,0 +1,135 @@
+{
+  "at": "2026-10-09T18:04:42.913Z",
+  "attempts": [
+    {
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "status": "read succeeded",
+      "historyComplete": false
+    },
+    {
+      "endpoint": "https://rpc.mevblocker.io/fast",
+      "status": "read succeeded",
+      "historyComplete": true
+    }
+  ],
+  "snapshot": {
+    "schema": "embeo-readonly-fees/1",
+    "observedUtc": "2026-10-09T18:04:42.912Z",
+    "chainId": 1,
+    "blockNumber": 26156436,
+    "blockHash": "0x6e5a48e66ffd15398cbfba00c2067a0922a724e80bf9fcee4371fef61d39f2e5",
+    "blockUtc": "2026-10-09T17:45:59.000Z",
+    "token": {
+      "address": "0x2b82cdeb8477415d541799abb0cc48044c8ea5f3",
+      "decimals": 18,
+      "supplyAtomic": "1000000000000000000000000000"
+    },
+    "poolId": "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a",
+    "poolFeeUnits": 12500,
+    "requester": "0x1c651928150daddda9c2c040a9d4901d862f8ec4",
+    "requesterBps": 8000,
+    "assets": {
+      "ETH": {
+        "owedAtomic": "0",
+        "poolUncollectedAtomic": "108394903258963378",
+        "estimatedRequesterAtomic": "86715922607170702",
+        "paidEventAtomic": "40241801935047402",
+        "poolCollectedAtomic": "50302252418809253"
+      },
+      "EMBEO": {
+        "owedAtomic": "0",
+        "poolUncollectedAtomic": "2699278216786747718090204",
+        "estimatedRequesterAtomic": "2159422573429398174472163",
+        "paidEventAtomic": "850448753733723892289645",
+        "poolCollectedAtomic": "1063060942167154865362057"
+      }
+    },
+    "simulation": {
+      "complete": true,
+      "error": null,
+      "method": "eth_call only; no broadcast; temporary simulated payouts are discarded"
+    },
+    "history": {
+      "complete": true,
+      "from": 26143156,
+      "to": 26156436,
+      "chunks": 7,
+      "error": null,
+      "paidScope": "Factory FeesPaid events for this wallet/currencies within the interval; may include other launches",
+      "claimed": [
+        {
+          "removed": false,
+          "logIndex": "0x1f5",
+          "transactionIndex": "0x28",
+          "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+          "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+          "blockNumber": "0x18f0ef4",
+          "blockTimestamp": "0x6ac87847",
+          "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+          "data": "0x00000000000000000000000000000000000000000000000000b2b5a1ced33da500000000000000000000000000000000000000000000e11ca62ea2c3be9a5489",
+          "topics": [
+            "0x92bb3dfe17df5319974aaca1e77895145ae67327ab5b3c58d40227a1d3966939",
+            "0x00000000000000000000000000000000000000000000000000000000000003b0",
+            "0x000000000000000000000000a4ad5765f70cb2349bf674271c0fbeb9f4375717"
+          ]
+        }
+      ],
+      "paid": [
+        {
+          "removed": false,
+          "logIndex": "0x1f6",
+          "transactionIndex": "0x28",
+          "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+          "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+          "blockNumber": "0x18f0ef4",
+          "blockTimestamp": "0x6ac87847",
+          "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+          "data": "0x000000000000000000000000000000000000000000000000008ef7b4a575caea",
+          "topics": [
+            "0x212133fc9a2f9e7b8a0f823506161dee64a13efd4cd79271db78553883268ab5",
+            "0x0000000000000000000000001c651928150daddda9c2c040a9d4901d862f8ec4",
+            "0x0000000000000000000000000000000000000000000000000000000000000000"
+          ]
+        },
+        {
+          "removed": false,
+          "logIndex": "0x1f8",
+          "transactionIndex": "0x28",
+          "transactionHash": "0x3c8409d7e0b8f7bb67d073cff8139aa5f4ca3356c42c6af01b0ad7c6fc625048",
+          "blockHash": "0xf5f0c058b4a411d9104184d7d9703a3c2ce53709496d5db2633fc811cdc493e2",
+          "blockNumber": "0x18f0ef4",
+          "blockTimestamp": "0x6ac87847",
+          "address": "0xff03410d0fe5fa8f7f59f743de35e333d9857120",
+          "data": "0x00000000000000000000000000000000000000000000b416eb5882363215106d",
+          "topics": [
+            "0x212133fc9a2f9e7b8a0f823506161dee64a13efd4cd79271db78553883268ab5",
+            "0x0000000000000000000000001c651928150daddda9c2c040a9d4901d862f8ec4",
+            "0x0000000000000000000000002b82cdeb8477415d541799abb0cc48044c8ea5f3"
+          ]
+        }
+      ]
+    },
+    "owedErrors": [
+      null,
+      null
+    ],
+    "membershipEnabled": false,
+    "financialActionPerformed": false
+  },
+  "endpoint": "https://rpc.mevblocker.io/fast",
+  "financialActions": false,
+  "independentReview": "pending",
+  "runtime": {
+    "token": {
+      "sha256": "34c88e2345fc1b93f60ace20e3933e251f0bff4149e279544ba3a6a72459062f",
+      "bytes": 1722,
+      "matchesLocalArtifact": true
+    },
+    "factory": {
+      "sha256": "c0704d5d18e592c1332f6e77c61012218538ea0a31cb167956d94149df5d9a72",
+      "bytes": 23345
+    }
+  },
+  "derivedPoolId": "0x616f6877a3fa74f550155002388df37e5b19861270420ac48fcf4b58c8f9f30a",
+  "poolIdMatches": true
+}

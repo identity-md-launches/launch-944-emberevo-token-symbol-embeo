@@ -1,0 +1,44 @@
+{
+  "route": "official build-website continuation",
+  "directory": "dist",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 8221,
+      "sha256": "4d42c335e751365703f4d2d64de0c9f7ff31968f1b3d092e954eb83ad3c5a0c6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 6847,
+      "sha256": "de50d2901e0bf68eaf0ae02aca577d773d627d5b6ffa992d6c7ae20ee8b4bd05"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 5306,
+      "sha256": "30a19b5115529767e92dbc3bf8adfe3535ce81263e467c2a7d63601d47846250"
+    },
+    {
+      "path": "fee-reader.mjs",
+      "bytes": 15660,
+      "sha256": "a5b14ecb0540ad1b398c0d24fe2fc6297de83df67266c8e3b05041f796ac9221"
+    },
+    {
+      "path": "token-config.mjs",
+      "bytes": 2047,
+      "sha256": "83e9cdfdb4b34cea0b773749abfd5810dd9e0dfb7a3b4a6af87121bc97c7f65c"
+    },
+    {
+      "path": "assets/emberevo-flame-64.png",
+      "bytes": 2713,
+      "sha256": "771f691c330cf00a0a9038b0aac718fd519000872f3cfb0532113739fccac4b4"
+    },
+    {
+      "path": "data/latest.json",
+      "bytes": 4652,
+      "sha256": "ad0c385738d6fd3c47bb590b8d5aff360315a1698f6efa36cbaf650adbac92ad"
+    }
+  ],
+  "totalBytes": 45446,
+  "publication": "Prepared for the official Website publisher; no IPFS receipt available locally.",
+  "independentReview": "pending"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "embeo-readonly-page",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The approved lightweight EMBEO token-information page, with public reads only.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test-fees.mjs && node --test tests/*.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test:browser": "node scripts/test-browser.mjs",
+    "verify:reference": "node scripts/verify-reference.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "playwright": "1.56.1",
+    "typescript": "5.9.3"
+  }
+}

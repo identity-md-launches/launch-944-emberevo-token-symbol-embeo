@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-09T18:11:39.421Z",
+  "mocked": false,
+  "failedRequests": [],
+  "state": {
+    "status": "已讀取鏈上資料。 核對時間：2026/10/9 18:11:42",
+    "block": "26156499（已最終確認）",
+    "provider": "https://rpc.mevblocker.io/fast",
+    "history": "付款事件已核對：區塊 26143156 至 26156499。同 Factory、同錢包／幣種的共用紀錄。",
+    "amounts": "{\n  \"ETH\": {\n    \"owedAtomic\": \"0\",\n    \"poolUncollectedAtomic\": \"108394903258963378\",\n    \"estimatedRequesterAtomic\": \"86715922607170702\",\n    \"paidEventAtomic\": \"40241801935047402\",\n    \"poolCollectedAtomic\": \"50302252418809253\"\n  },\n  \"EMBEO\": {\n    \"owedAtomic\": \"0\",\n    \"poolUncollectedAtomic\": \"2699278216786747718090204\",\n    \"estimatedRequesterAtomic\": \"2159422573429398174472163\",\n    \"paidEventAtomic\": \"850448753733723892289645\",\n    \"poolCollectedAtomic\": \"1063060942167154865362057\"\n  }\n}"
+  }
+}
